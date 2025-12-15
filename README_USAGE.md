@@ -11,10 +11,10 @@
 ## 二、默认配置
 
 ```
-端点 (Endpoint): http://192.168.31.203
-模型 (Model): gemini-2.5-pro-preview
-API Key: dummy-not-used
-翻译服务商: OpenAI
+端点 (Endpoint): https://jp.duckcoding.com/v1beta/models/gemini-3-pro-preview:generateContent
+模型 (Model): gemini-3-pro-preview
+API Key: （内置测试 key，可在 BoxJs 覆盖）
+翻译服务商: OpenAI（Gemini 原生 generateContent）
 ```
 
 ## 三、文件说明
@@ -23,7 +23,7 @@ API Key: dummy-not-used
 
 | 文件 | 说明 |
 |------|------|
-| `scripts/Translate.OpenAI.response.js` | OpenAI 兼容翻译脚本 |
+| `scripts/Translate.response.bundle.js` | 翻译脚本（支持 Gemini 原生 generateContent + OpenAI 兼容） |
 | `DualSubs.Universal.OpenAI.snippet` | Quantumult X 配置片段 |
 | `DualSubs-Universal-Source/` | 修改后的源代码 |
 
@@ -43,14 +43,14 @@ template/boxjs.settings.json     - 添加 BoxJs 配置项
 
 **方法 A: 使用自定义翻译脚本（推荐）**
 
-1. 将 `scripts/Translate.OpenAI.response.js` 复制到 Quantumult X 的脚本目录
+1. 将 `scripts/Translate.response.bundle.js` 复制到 Quantumult X 的脚本目录
 
 2. 在 Quantumult X 配置文件中添加：
 
 ```ini
 [rewrite_local]
 # 示例：Apple TV+ 字幕翻译
-^https?:\/\/vod-(.+)-(aoc|svod)\.tv\.apple\.com\/itunes-assets\/(.+)\.webvtt\?(.*)subtype=Translate url script-response-body Translate.OpenAI.response.js
+^https?:\/\/vod-(.+)-(aoc|svod)\.tv\.apple\.com\/itunes-assets\/(.+)\.webvtt\?(.*)subtype=Translate url script-response-body Translate.response.bundle.js
 
 [mitm]
 hostname = vod-*.tv.apple.com
@@ -59,7 +59,7 @@ hostname = vod-*.tv.apple.com
 **方法 B: 使用完整的 snippet 文件**
 
 1. 将 `DualSubs.Universal.OpenAI.snippet` 导入 Quantumult X
-2. 将 `scripts/Translate.OpenAI.response.js` 复制到脚本目录
+2. （可选）将 `scripts/Translate.response.bundle.js` 复制到脚本目录
 3. 启用该配置
 
 ### 4.2 Surge / Loon / Stash 使用方法
@@ -76,25 +76,26 @@ npm run build
 ```
 
 或者直接使用翻译脚本：
-1. 将 `scripts/Translate.OpenAI.response.js` 部署到可访问的位置
+1. 将 `scripts/Translate.response.bundle.js` 部署到可访问的位置
 2. 在配置中引用该脚本
 
 ## 五、配置修改
 
 ### 5.1 修改端点和模型
 
-编辑 `scripts/Translate.OpenAI.response.js` 中的配置：
+推荐使用 BoxJs 覆盖（不需要改脚本源码）：
 
-```javascript
-const DEFAULT_CONFIG = {
-    OpenAI: {
-        Endpoint: "http://192.168.31.203",  // 修改为你的端点
-        Model: "gemini-2.5-pro-preview",     // 修改为你的模型
-        Auth: "dummy-not-used",              // 修改为你的 API Key
-    },
-    // ...
-};
 ```
+@DualSubs.API.Settings.OpenAI.Endpoint = "https://jp.duckcoding.com/v1beta/models/gemini-3-pro-preview:generateContent"
+@DualSubs.API.Settings.OpenAI.Model = "gemini-3-pro-preview"
+@DualSubs.API.Settings.OpenAI.Auth = "sk-***"
+@DualSubs.API.Settings.OpenAI.Timeout = 15000
+```
+
+说明：
+- `Endpoint` 支持填写：
+  - Gemini 原生：`https://jp.duckcoding.com/v1beta/models/<model>:generateContent`
+  - OpenAI 兼容：`https://jp.duckcoding.com`（脚本会自动拼接 `/v1/chat/completions`）
 
 ### 5.2 使用 BoxJs 配置（可选）
 
@@ -102,9 +103,9 @@ const DEFAULT_CONFIG = {
 
 ```
 @DualSubs.Universal.Settings.Vendor = "OpenAI"
-@DualSubs.Universal.API.OpenAI.Endpoint = "http://192.168.31.203"
-@DualSubs.Universal.API.OpenAI.Model = "gemini-2.5-pro-preview"
-@DualSubs.Universal.API.OpenAI.Auth = "dummy-not-used"
+@DualSubs.API.Settings.OpenAI.Endpoint = "https://jp.duckcoding.com/v1beta/models/gemini-3-pro-preview:generateContent"
+@DualSubs.API.Settings.OpenAI.Model = "gemini-3-pro-preview"
+@DualSubs.API.Settings.OpenAI.Auth = "sk-***"
 ```
 
 ### 5.3 修改翻译语言
@@ -129,21 +130,20 @@ Languages: ["AUTO", "ZH"],  // [源语言, 目标语言]
 翻译脚本发送的请求格式如下：
 
 ```json
-POST /v1/chat/completions
+POST /v1beta/models/gemini-3-pro-preview:generateContent
 {
-    "model": "gemini-2.5-pro-preview",
-    "messages": [
-        {
-            "role": "system",
-            "content": "You are a professional subtitle translator..."
-        },
-        {
-            "role": "user",
-            "content": "字幕文本\n第二行字幕..."
-        }
-    ],
+  "contents": [
+    {
+      "role": "user",
+      "parts": [
+        { "text": "You are a professional subtitle translator...\n\n字幕文本\\n[LINE_BREAK]\\n第二行字幕..." }
+      ]
+    }
+  ],
+  "generationConfig": {
     "temperature": 0.3,
-    "max_tokens": 4096
+    "maxOutputTokens": 4096
+  }
 }
 ```
 
@@ -151,13 +151,15 @@ POST /v1/chat/completions
 
 ```json
 {
-    "choices": [
-        {
-            "message": {
-                "content": "翻译后的文本\n第二行翻译..."
-            }
-        }
-    ]
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          { "text": "翻译后的文本\\n[LINE_BREAK]\\n第二行翻译..." }
+        ]
+      }
+    }
+  ]
 }
 ```
 
@@ -233,4 +235,3 @@ Translate: {
 ---
 
 如有问题，请参考原项目文档：https://DualSubs.github.io/guide/universal
-
