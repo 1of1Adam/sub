@@ -2,7 +2,7 @@
 console.log('🍿️ DualSubs: 🔣 Universal β');
 console.log('External.Lyrics.response.bundle.js');
 console.log('Version: undefined');
-console.log('Date: 2025/12/16 00:11:13');
+console.log('Date: 2025/12/16 00:30:09');
 (() => { // webpackBootstrap
 "use strict";
 var __webpack_modules__ = ({
