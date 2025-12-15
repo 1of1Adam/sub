@@ -7237,7 +7237,7 @@ console.log("Date: 2025/11/23 15:45:04");
           g = 20;
           break;
         case "OpenAI":
-          g = 40;
+          g = 10;
       }
       let c = [];
       switch (t) {
