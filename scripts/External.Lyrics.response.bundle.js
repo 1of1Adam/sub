@@ -1,16 +1,16 @@
 /*! https://DualSubs.github.io/guide/universal */
 console.log('🍿️ DualSubs: 🔣 Universal β');
-console.log('Translate.response.bundle.js');
+console.log('External.Lyrics.response.bundle.js');
 console.log('Version: undefined');
 console.log('Date: 2025/12/15 23:46:06');
 (() => { // webpackBootstrap
+"use strict";
 var __webpack_modules__ = ({
 "./node_modules/@protobuf-ts/runtime/build/es2015/assert.js": 
 /*!******************************************************************!*\
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/assert.js ***!
   \******************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   assert: () => (assert),
   assertFloat32: () => (assertFloat32),
@@ -60,7 +60,6 @@ function assertFloat32(arg) {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/base64.js ***!
   \******************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   base64decode: () => (base64decode),
   base64encode: () => (base64encode)
@@ -186,7 +185,6 @@ function base64encode(bytes) {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/binary-format-contract.js ***!
   \**********************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   UnknownFieldHandler: () => (UnknownFieldHandler),
   WireType: () => (WireType)
@@ -295,9 +293,7 @@ var WireType;
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/binary-reader.js ***!
   \*************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
-  BinaryReader: () => (BinaryReader),
   binaryReadOptions: () => (binaryReadOptions)
 });
 /* ESM import */var _binary_format_contract__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./binary-format-contract */ "./node_modules/@protobuf-ts/runtime/build/es2015/binary-format-contract.js");
@@ -489,7 +485,6 @@ class BinaryReader {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/binary-writer.js ***!
   \*************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   binaryWriteOptions: () => (binaryWriteOptions)
 });
@@ -731,7 +726,6 @@ class BinaryWriter {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/goog-varint.js ***!
   \***********************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   int64fromString: () => (int64fromString),
   int64toString: () => (int64toString),
@@ -1013,7 +1007,6 @@ function varint32read() {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/json-format-contract.js ***!
   \********************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   jsonReadOptions: () => (jsonReadOptions),
   jsonWriteOptions: () => (jsonWriteOptions)
@@ -1055,7 +1048,6 @@ function mergeJsonOptions(a, b) {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/json-typings.js ***!
   \************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   isJsonObject: () => (isJsonObject),
   typeofJsonValue: () => (typeofJsonValue)
@@ -1088,7 +1080,6 @@ function isJsonObject(value) {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/lower-camel-case.js ***!
   \****************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   lowerCamelCase: () => (lowerCamelCase)
 });
@@ -1131,7 +1122,6 @@ function lowerCamelCase(snakeCase) {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/message-type-contract.js ***!
   \*********************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   MESSAGE_TYPE: () => (MESSAGE_TYPE)
 });
@@ -1150,7 +1140,6 @@ const MESSAGE_TYPE = Symbol.for("protobuf-ts/message-type");
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/message-type.js ***!
   \************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   MessageType: () => (MessageType)
 });
@@ -1349,7 +1338,6 @@ class MessageType {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/oneof.js ***!
   \*****************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   isOneofGroup: () => (isOneofGroup)
 });
@@ -1466,7 +1454,6 @@ function getSelectedOneofValue(oneof) {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/pb-long.js ***!
   \*******************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   PbLong: () => (PbLong),
   PbULong: () => (PbULong)
@@ -1712,7 +1699,6 @@ PbLong.ZERO = new PbLong(0, 0);
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/reflection-binary-reader.js ***!
   \************************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   ReflectionBinaryReader: () => (ReflectionBinaryReader)
 });
@@ -1907,7 +1893,6 @@ class ReflectionBinaryReader {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/reflection-binary-writer.js ***!
   \************************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   ReflectionBinaryWriter: () => (ReflectionBinaryWriter)
 });
@@ -2152,7 +2137,6 @@ class ReflectionBinaryWriter {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/reflection-create.js ***!
   \*****************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   reflectionCreate: () => (reflectionCreate)
 });
@@ -2210,7 +2194,6 @@ function reflectionCreate(type) {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/reflection-equals.js ***!
   \*****************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   reflectionEquals: () => (reflectionEquals)
 });
@@ -2296,7 +2279,6 @@ function repeatedMsgEq(type, a, b) {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/reflection-info.js ***!
   \***************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   LongType: () => (LongType),
   RepeatType: () => (RepeatType),
@@ -2463,7 +2445,6 @@ function readMessageOption(messageType, extensionName, extensionType) {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/reflection-json-reader.js ***!
   \**********************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   ReflectionJsonReader: () => (ReflectionJsonReader)
 });
@@ -2794,7 +2775,6 @@ class ReflectionJsonReader {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/reflection-json-writer.js ***!
   \**********************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   ReflectionJsonWriter: () => (ReflectionJsonWriter)
 });
@@ -3036,7 +3016,6 @@ class ReflectionJsonWriter {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/reflection-long-convert.js ***!
   \***********************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   reflectionLongConvert: () => (reflectionLongConvert)
 });
@@ -3069,7 +3048,6 @@ function reflectionLongConvert(long, type) {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/reflection-merge-partial.js ***!
   \************************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   reflectionMergePartial: () => (reflectionMergePartial)
 });
@@ -3167,7 +3145,6 @@ function reflectionMergePartial(info, target, source) {
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/reflection-scalar-default.js ***!
   \*************************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   reflectionScalarDefault: () => (reflectionScalarDefault)
 });
@@ -3215,7 +3192,6 @@ function reflectionScalarDefault(type, longType = _reflection_info__WEBPACK_IMPO
   !*** ./node_modules/@protobuf-ts/runtime/build/es2015/reflection-type-check.js ***!
   \*********************************************************************************/
 (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   ReflectionTypeCheck: () => (ReflectionTypeCheck)
 });
@@ -3450,1457 +3426,11 @@ class ReflectionTypeCheck {
 
 
 }),
-"./node_modules/crypto-js/core.js": 
-/*!****************************************!*\
-  !*** ./node_modules/crypto-js/core.js ***!
-  \****************************************/
-(function (module, exports, __webpack_require__) {
-;(function (root, factory) {
-	if (true) {
-		// CommonJS
-		module.exports = exports = factory();
-	}
-	else {}
-}(this, function () {
-
-	/*globals window, global, require*/
-
-	/**
-	 * CryptoJS core components.
-	 */
-	var CryptoJS = CryptoJS || (function (Math, undefined) {
-
-	    var crypto;
-
-	    // Native crypto from window (Browser)
-	    if (typeof window !== 'undefined' && window.crypto) {
-	        crypto = window.crypto;
-	    }
-
-	    // Native crypto in web worker (Browser)
-	    if (typeof self !== 'undefined' && self.crypto) {
-	        crypto = self.crypto;
-	    }
-
-	    // Native crypto from worker
-	    if (typeof globalThis !== 'undefined' && globalThis.crypto) {
-	        crypto = globalThis.crypto;
-	    }
-
-	    // Native (experimental IE 11) crypto from window (Browser)
-	    if (!crypto && typeof window !== 'undefined' && window.msCrypto) {
-	        crypto = window.msCrypto;
-	    }
-
-	    // Native crypto from global (NodeJS)
-	    if (!crypto && typeof __webpack_require__.g !== 'undefined' && __webpack_require__.g.crypto) {
-	        crypto = __webpack_require__.g.crypto;
-	    }
-
-	    // Native crypto import via require (NodeJS)
-	    if (!crypto && 'function' === 'function') {
-	        try {
-	            crypto = __webpack_require__(/*! crypto */ "?f97c");
-	        } catch (err) {}
-	    }
-
-	    /*
-	     * Cryptographically secure pseudorandom number generator
-	     *
-	     * As Math.random() is cryptographically not safe to use
-	     */
-	    var cryptoSecureRandomInt = function () {
-	        if (crypto) {
-	            // Use getRandomValues method (Browser)
-	            if (typeof crypto.getRandomValues === 'function') {
-	                try {
-	                    return crypto.getRandomValues(new Uint32Array(1))[0];
-	                } catch (err) {}
-	            }
-
-	            // Use randomBytes method (NodeJS)
-	            if (typeof crypto.randomBytes === 'function') {
-	                try {
-	                    return crypto.randomBytes(4).readInt32LE();
-	                } catch (err) {}
-	            }
-	        }
-
-	        throw new Error('Native crypto module could not be used to get secure random number.');
-	    };
-
-	    /*
-	     * Local polyfill of Object.create
-
-	     */
-	    var create = Object.create || (function () {
-	        function F() {}
-
-	        return function (obj) {
-	            var subtype;
-
-	            F.prototype = obj;
-
-	            subtype = new F();
-
-	            F.prototype = null;
-
-	            return subtype;
-	        };
-	    }());
-
-	    /**
-	     * CryptoJS namespace.
-	     */
-	    var C = {};
-
-	    /**
-	     * Library namespace.
-	     */
-	    var C_lib = C.lib = {};
-
-	    /**
-	     * Base object for prototypal inheritance.
-	     */
-	    var Base = C_lib.Base = (function () {
-
-
-	        return {
-	            /**
-	             * Creates a new object that inherits from this object.
-	             *
-	             * @param {Object} overrides Properties to copy into the new object.
-	             *
-	             * @return {Object} The new object.
-	             *
-	             * @static
-	             *
-	             * @example
-	             *
-	             *     var MyType = CryptoJS.lib.Base.extend({
-	             *         field: 'value',
-	             *
-	             *         method: function () {
-	             *         }
-	             *     });
-	             */
-	            extend: function (overrides) {
-	                // Spawn
-	                var subtype = create(this);
-
-	                // Augment
-	                if (overrides) {
-	                    subtype.mixIn(overrides);
-	                }
-
-	                // Create default initializer
-	                if (!subtype.hasOwnProperty('init') || this.init === subtype.init) {
-	                    subtype.init = function () {
-	                        subtype.$super.init.apply(this, arguments);
-	                    };
-	                }
-
-	                // Initializer's prototype is the subtype object
-	                subtype.init.prototype = subtype;
-
-	                // Reference supertype
-	                subtype.$super = this;
-
-	                return subtype;
-	            },
-
-	            /**
-	             * Extends this object and runs the init method.
-	             * Arguments to create() will be passed to init().
-	             *
-	             * @return {Object} The new object.
-	             *
-	             * @static
-	             *
-	             * @example
-	             *
-	             *     var instance = MyType.create();
-	             */
-	            create: function () {
-	                var instance = this.extend();
-	                instance.init.apply(instance, arguments);
-
-	                return instance;
-	            },
-
-	            /**
-	             * Initializes a newly created object.
-	             * Override this method to add some logic when your objects are created.
-	             *
-	             * @example
-	             *
-	             *     var MyType = CryptoJS.lib.Base.extend({
-	             *         init: function () {
-	             *             // ...
-	             *         }
-	             *     });
-	             */
-	            init: function () {
-	            },
-
-	            /**
-	             * Copies properties into this object.
-	             *
-	             * @param {Object} properties The properties to mix in.
-	             *
-	             * @example
-	             *
-	             *     MyType.mixIn({
-	             *         field: 'value'
-	             *     });
-	             */
-	            mixIn: function (properties) {
-	                for (var propertyName in properties) {
-	                    if (properties.hasOwnProperty(propertyName)) {
-	                        this[propertyName] = properties[propertyName];
-	                    }
-	                }
-
-	                // IE won't copy toString using the loop above
-	                if (properties.hasOwnProperty('toString')) {
-	                    this.toString = properties.toString;
-	                }
-	            },
-
-	            /**
-	             * Creates a copy of this object.
-	             *
-	             * @return {Object} The clone.
-	             *
-	             * @example
-	             *
-	             *     var clone = instance.clone();
-	             */
-	            clone: function () {
-	                return this.init.prototype.extend(this);
-	            }
-	        };
-	    }());
-
-	    /**
-	     * An array of 32-bit words.
-	     *
-	     * @property {Array} words The array of 32-bit words.
-	     * @property {number} sigBytes The number of significant bytes in this word array.
-	     */
-	    var WordArray = C_lib.WordArray = Base.extend({
-	        /**
-	         * Initializes a newly created word array.
-	         *
-	         * @param {Array} words (Optional) An array of 32-bit words.
-	         * @param {number} sigBytes (Optional) The number of significant bytes in the words.
-	         *
-	         * @example
-	         *
-	         *     var wordArray = CryptoJS.lib.WordArray.create();
-	         *     var wordArray = CryptoJS.lib.WordArray.create([0x00010203, 0x04050607]);
-	         *     var wordArray = CryptoJS.lib.WordArray.create([0x00010203, 0x04050607], 6);
-	         */
-	        init: function (words, sigBytes) {
-	            words = this.words = words || [];
-
-	            if (sigBytes != undefined) {
-	                this.sigBytes = sigBytes;
-	            } else {
-	                this.sigBytes = words.length * 4;
-	            }
-	        },
-
-	        /**
-	         * Converts this word array to a string.
-	         *
-	         * @param {Encoder} encoder (Optional) The encoding strategy to use. Default: CryptoJS.enc.Hex
-	         *
-	         * @return {string} The stringified word array.
-	         *
-	         * @example
-	         *
-	         *     var string = wordArray + '';
-	         *     var string = wordArray.toString();
-	         *     var string = wordArray.toString(CryptoJS.enc.Utf8);
-	         */
-	        toString: function (encoder) {
-	            return (encoder || Hex).stringify(this);
-	        },
-
-	        /**
-	         * Concatenates a word array to this word array.
-	         *
-	         * @param {WordArray} wordArray The word array to append.
-	         *
-	         * @return {WordArray} This word array.
-	         *
-	         * @example
-	         *
-	         *     wordArray1.concat(wordArray2);
-	         */
-	        concat: function (wordArray) {
-	            // Shortcuts
-	            var thisWords = this.words;
-	            var thatWords = wordArray.words;
-	            var thisSigBytes = this.sigBytes;
-	            var thatSigBytes = wordArray.sigBytes;
-
-	            // Clamp excess bits
-	            this.clamp();
-
-	            // Concat
-	            if (thisSigBytes % 4) {
-	                // Copy one byte at a time
-	                for (var i = 0; i < thatSigBytes; i++) {
-	                    var thatByte = (thatWords[i >>> 2] >>> (24 - (i % 4) * 8)) & 0xff;
-	                    thisWords[(thisSigBytes + i) >>> 2] |= thatByte << (24 - ((thisSigBytes + i) % 4) * 8);
-	                }
-	            } else {
-	                // Copy one word at a time
-	                for (var j = 0; j < thatSigBytes; j += 4) {
-	                    thisWords[(thisSigBytes + j) >>> 2] = thatWords[j >>> 2];
-	                }
-	            }
-	            this.sigBytes += thatSigBytes;
-
-	            // Chainable
-	            return this;
-	        },
-
-	        /**
-	         * Removes insignificant bits.
-	         *
-	         * @example
-	         *
-	         *     wordArray.clamp();
-	         */
-	        clamp: function () {
-	            // Shortcuts
-	            var words = this.words;
-	            var sigBytes = this.sigBytes;
-
-	            // Clamp
-	            words[sigBytes >>> 2] &= 0xffffffff << (32 - (sigBytes % 4) * 8);
-	            words.length = Math.ceil(sigBytes / 4);
-	        },
-
-	        /**
-	         * Creates a copy of this word array.
-	         *
-	         * @return {WordArray} The clone.
-	         *
-	         * @example
-	         *
-	         *     var clone = wordArray.clone();
-	         */
-	        clone: function () {
-	            var clone = Base.clone.call(this);
-	            clone.words = this.words.slice(0);
-
-	            return clone;
-	        },
-
-	        /**
-	         * Creates a word array filled with random bytes.
-	         *
-	         * @param {number} nBytes The number of random bytes to generate.
-	         *
-	         * @return {WordArray} The random word array.
-	         *
-	         * @static
-	         *
-	         * @example
-	         *
-	         *     var wordArray = CryptoJS.lib.WordArray.random(16);
-	         */
-	        random: function (nBytes) {
-	            var words = [];
-
-	            for (var i = 0; i < nBytes; i += 4) {
-	                words.push(cryptoSecureRandomInt());
-	            }
-
-	            return new WordArray.init(words, nBytes);
-	        }
-	    });
-
-	    /**
-	     * Encoder namespace.
-	     */
-	    var C_enc = C.enc = {};
-
-	    /**
-	     * Hex encoding strategy.
-	     */
-	    var Hex = C_enc.Hex = {
-	        /**
-	         * Converts a word array to a hex string.
-	         *
-	         * @param {WordArray} wordArray The word array.
-	         *
-	         * @return {string} The hex string.
-	         *
-	         * @static
-	         *
-	         * @example
-	         *
-	         *     var hexString = CryptoJS.enc.Hex.stringify(wordArray);
-	         */
-	        stringify: function (wordArray) {
-	            // Shortcuts
-	            var words = wordArray.words;
-	            var sigBytes = wordArray.sigBytes;
-
-	            // Convert
-	            var hexChars = [];
-	            for (var i = 0; i < sigBytes; i++) {
-	                var bite = (words[i >>> 2] >>> (24 - (i % 4) * 8)) & 0xff;
-	                hexChars.push((bite >>> 4).toString(16));
-	                hexChars.push((bite & 0x0f).toString(16));
-	            }
-
-	            return hexChars.join('');
-	        },
-
-	        /**
-	         * Converts a hex string to a word array.
-	         *
-	         * @param {string} hexStr The hex string.
-	         *
-	         * @return {WordArray} The word array.
-	         *
-	         * @static
-	         *
-	         * @example
-	         *
-	         *     var wordArray = CryptoJS.enc.Hex.parse(hexString);
-	         */
-	        parse: function (hexStr) {
-	            // Shortcut
-	            var hexStrLength = hexStr.length;
-
-	            // Convert
-	            var words = [];
-	            for (var i = 0; i < hexStrLength; i += 2) {
-	                words[i >>> 3] |= parseInt(hexStr.substr(i, 2), 16) << (24 - (i % 8) * 4);
-	            }
-
-	            return new WordArray.init(words, hexStrLength / 2);
-	        }
-	    };
-
-	    /**
-	     * Latin1 encoding strategy.
-	     */
-	    var Latin1 = C_enc.Latin1 = {
-	        /**
-	         * Converts a word array to a Latin1 string.
-	         *
-	         * @param {WordArray} wordArray The word array.
-	         *
-	         * @return {string} The Latin1 string.
-	         *
-	         * @static
-	         *
-	         * @example
-	         *
-	         *     var latin1String = CryptoJS.enc.Latin1.stringify(wordArray);
-	         */
-	        stringify: function (wordArray) {
-	            // Shortcuts
-	            var words = wordArray.words;
-	            var sigBytes = wordArray.sigBytes;
-
-	            // Convert
-	            var latin1Chars = [];
-	            for (var i = 0; i < sigBytes; i++) {
-	                var bite = (words[i >>> 2] >>> (24 - (i % 4) * 8)) & 0xff;
-	                latin1Chars.push(String.fromCharCode(bite));
-	            }
-
-	            return latin1Chars.join('');
-	        },
-
-	        /**
-	         * Converts a Latin1 string to a word array.
-	         *
-	         * @param {string} latin1Str The Latin1 string.
-	         *
-	         * @return {WordArray} The word array.
-	         *
-	         * @static
-	         *
-	         * @example
-	         *
-	         *     var wordArray = CryptoJS.enc.Latin1.parse(latin1String);
-	         */
-	        parse: function (latin1Str) {
-	            // Shortcut
-	            var latin1StrLength = latin1Str.length;
-
-	            // Convert
-	            var words = [];
-	            for (var i = 0; i < latin1StrLength; i++) {
-	                words[i >>> 2] |= (latin1Str.charCodeAt(i) & 0xff) << (24 - (i % 4) * 8);
-	            }
-
-	            return new WordArray.init(words, latin1StrLength);
-	        }
-	    };
-
-	    /**
-	     * UTF-8 encoding strategy.
-	     */
-	    var Utf8 = C_enc.Utf8 = {
-	        /**
-	         * Converts a word array to a UTF-8 string.
-	         *
-	         * @param {WordArray} wordArray The word array.
-	         *
-	         * @return {string} The UTF-8 string.
-	         *
-	         * @static
-	         *
-	         * @example
-	         *
-	         *     var utf8String = CryptoJS.enc.Utf8.stringify(wordArray);
-	         */
-	        stringify: function (wordArray) {
-	            try {
-	                return decodeURIComponent(escape(Latin1.stringify(wordArray)));
-	            } catch (e) {
-	                throw new Error('Malformed UTF-8 data');
-	            }
-	        },
-
-	        /**
-	         * Converts a UTF-8 string to a word array.
-	         *
-	         * @param {string} utf8Str The UTF-8 string.
-	         *
-	         * @return {WordArray} The word array.
-	         *
-	         * @static
-	         *
-	         * @example
-	         *
-	         *     var wordArray = CryptoJS.enc.Utf8.parse(utf8String);
-	         */
-	        parse: function (utf8Str) {
-	            return Latin1.parse(unescape(encodeURIComponent(utf8Str)));
-	        }
-	    };
-
-	    /**
-	     * Abstract buffered block algorithm template.
-	     *
-	     * The property blockSize must be implemented in a concrete subtype.
-	     *
-	     * @property {number} _minBufferSize The number of blocks that should be kept unprocessed in the buffer. Default: 0
-	     */
-	    var BufferedBlockAlgorithm = C_lib.BufferedBlockAlgorithm = Base.extend({
-	        /**
-	         * Resets this block algorithm's data buffer to its initial state.
-	         *
-	         * @example
-	         *
-	         *     bufferedBlockAlgorithm.reset();
-	         */
-	        reset: function () {
-	            // Initial values
-	            this._data = new WordArray.init();
-	            this._nDataBytes = 0;
-	        },
-
-	        /**
-	         * Adds new data to this block algorithm's buffer.
-	         *
-	         * @param {WordArray|string} data The data to append. Strings are converted to a WordArray using UTF-8.
-	         *
-	         * @example
-	         *
-	         *     bufferedBlockAlgorithm._append('data');
-	         *     bufferedBlockAlgorithm._append(wordArray);
-	         */
-	        _append: function (data) {
-	            // Convert string to WordArray, else assume WordArray already
-	            if (typeof data == 'string') {
-	                data = Utf8.parse(data);
-	            }
-
-	            // Append
-	            this._data.concat(data);
-	            this._nDataBytes += data.sigBytes;
-	        },
-
-	        /**
-	         * Processes available data blocks.
-	         *
-	         * This method invokes _doProcessBlock(offset), which must be implemented by a concrete subtype.
-	         *
-	         * @param {boolean} doFlush Whether all blocks and partial blocks should be processed.
-	         *
-	         * @return {WordArray} The processed data.
-	         *
-	         * @example
-	         *
-	         *     var processedData = bufferedBlockAlgorithm._process();
-	         *     var processedData = bufferedBlockAlgorithm._process(!!'flush');
-	         */
-	        _process: function (doFlush) {
-	            var processedWords;
-
-	            // Shortcuts
-	            var data = this._data;
-	            var dataWords = data.words;
-	            var dataSigBytes = data.sigBytes;
-	            var blockSize = this.blockSize;
-	            var blockSizeBytes = blockSize * 4;
-
-	            // Count blocks ready
-	            var nBlocksReady = dataSigBytes / blockSizeBytes;
-	            if (doFlush) {
-	                // Round up to include partial blocks
-	                nBlocksReady = Math.ceil(nBlocksReady);
-	            } else {
-	                // Round down to include only full blocks,
-	                // less the number of blocks that must remain in the buffer
-	                nBlocksReady = Math.max((nBlocksReady | 0) - this._minBufferSize, 0);
-	            }
-
-	            // Count words ready
-	            var nWordsReady = nBlocksReady * blockSize;
-
-	            // Count bytes ready
-	            var nBytesReady = Math.min(nWordsReady * 4, dataSigBytes);
-
-	            // Process blocks
-	            if (nWordsReady) {
-	                for (var offset = 0; offset < nWordsReady; offset += blockSize) {
-	                    // Perform concrete-algorithm logic
-	                    this._doProcessBlock(dataWords, offset);
-	                }
-
-	                // Remove processed words
-	                processedWords = dataWords.splice(0, nWordsReady);
-	                data.sigBytes -= nBytesReady;
-	            }
-
-	            // Return processed words
-	            return new WordArray.init(processedWords, nBytesReady);
-	        },
-
-	        /**
-	         * Creates a copy of this object.
-	         *
-	         * @return {Object} The clone.
-	         *
-	         * @example
-	         *
-	         *     var clone = bufferedBlockAlgorithm.clone();
-	         */
-	        clone: function () {
-	            var clone = Base.clone.call(this);
-	            clone._data = this._data.clone();
-
-	            return clone;
-	        },
-
-	        _minBufferSize: 0
-	    });
-
-	    /**
-	     * Abstract hasher template.
-	     *
-	     * @property {number} blockSize The number of 32-bit words this hasher operates on. Default: 16 (512 bits)
-	     */
-	    var Hasher = C_lib.Hasher = BufferedBlockAlgorithm.extend({
-	        /**
-	         * Configuration options.
-	         */
-	        cfg: Base.extend(),
-
-	        /**
-	         * Initializes a newly created hasher.
-	         *
-	         * @param {Object} cfg (Optional) The configuration options to use for this hash computation.
-	         *
-	         * @example
-	         *
-	         *     var hasher = CryptoJS.algo.SHA256.create();
-	         */
-	        init: function (cfg) {
-	            // Apply config defaults
-	            this.cfg = this.cfg.extend(cfg);
-
-	            // Set initial values
-	            this.reset();
-	        },
-
-	        /**
-	         * Resets this hasher to its initial state.
-	         *
-	         * @example
-	         *
-	         *     hasher.reset();
-	         */
-	        reset: function () {
-	            // Reset data buffer
-	            BufferedBlockAlgorithm.reset.call(this);
-
-	            // Perform concrete-hasher logic
-	            this._doReset();
-	        },
-
-	        /**
-	         * Updates this hasher with a message.
-	         *
-	         * @param {WordArray|string} messageUpdate The message to append.
-	         *
-	         * @return {Hasher} This hasher.
-	         *
-	         * @example
-	         *
-	         *     hasher.update('message');
-	         *     hasher.update(wordArray);
-	         */
-	        update: function (messageUpdate) {
-	            // Append
-	            this._append(messageUpdate);
-
-	            // Update the hash
-	            this._process();
-
-	            // Chainable
-	            return this;
-	        },
-
-	        /**
-	         * Finalizes the hash computation.
-	         * Note that the finalize operation is effectively a destructive, read-once operation.
-	         *
-	         * @param {WordArray|string} messageUpdate (Optional) A final message update.
-	         *
-	         * @return {WordArray} The hash.
-	         *
-	         * @example
-	         *
-	         *     var hash = hasher.finalize();
-	         *     var hash = hasher.finalize('message');
-	         *     var hash = hasher.finalize(wordArray);
-	         */
-	        finalize: function (messageUpdate) {
-	            // Final message update
-	            if (messageUpdate) {
-	                this._append(messageUpdate);
-	            }
-
-	            // Perform concrete-hasher logic
-	            var hash = this._doFinalize();
-
-	            return hash;
-	        },
-
-	        blockSize: 512/32,
-
-	        /**
-	         * Creates a shortcut function to a hasher's object interface.
-	         *
-	         * @param {Hasher} hasher The hasher to create a helper for.
-	         *
-	         * @return {Function} The shortcut function.
-	         *
-	         * @static
-	         *
-	         * @example
-	         *
-	         *     var SHA256 = CryptoJS.lib.Hasher._createHelper(CryptoJS.algo.SHA256);
-	         */
-	        _createHelper: function (hasher) {
-	            return function (message, cfg) {
-	                return new hasher.init(cfg).finalize(message);
-	            };
-	        },
-
-	        /**
-	         * Creates a shortcut function to the HMAC's object interface.
-	         *
-	         * @param {Hasher} hasher The hasher to use in this HMAC helper.
-	         *
-	         * @return {Function} The shortcut function.
-	         *
-	         * @static
-	         *
-	         * @example
-	         *
-	         *     var HmacSHA256 = CryptoJS.lib.Hasher._createHmacHelper(CryptoJS.algo.SHA256);
-	         */
-	        _createHmacHelper: function (hasher) {
-	            return function (message, key) {
-	                return new C_algo.HMAC.init(hasher, key).finalize(message);
-	            };
-	        }
-	    });
-
-	    /**
-	     * Algorithm namespace.
-	     */
-	    var C_algo = C.algo = {};
-
-	    return C;
-	}(Math));
-
-
-	return CryptoJS;
-
-}));
-
-}),
-"./node_modules/crypto-js/md5.js": 
-/*!***************************************!*\
-  !*** ./node_modules/crypto-js/md5.js ***!
-  \***************************************/
-(function (module, exports, __webpack_require__) {
-;(function (root, factory) {
-	if (true) {
-		// CommonJS
-		module.exports = exports = factory(__webpack_require__(/*! ./core */ "./node_modules/crypto-js/core.js"));
-	}
-	else {}
-}(this, function (CryptoJS) {
-
-	(function (Math) {
-	    // Shortcuts
-	    var C = CryptoJS;
-	    var C_lib = C.lib;
-	    var WordArray = C_lib.WordArray;
-	    var Hasher = C_lib.Hasher;
-	    var C_algo = C.algo;
-
-	    // Constants table
-	    var T = [];
-
-	    // Compute constants
-	    (function () {
-	        for (var i = 0; i < 64; i++) {
-	            T[i] = (Math.abs(Math.sin(i + 1)) * 0x100000000) | 0;
-	        }
-	    }());
-
-	    /**
-	     * MD5 hash algorithm.
-	     */
-	    var MD5 = C_algo.MD5 = Hasher.extend({
-	        _doReset: function () {
-	            this._hash = new WordArray.init([
-	                0x67452301, 0xefcdab89,
-	                0x98badcfe, 0x10325476
-	            ]);
-	        },
-
-	        _doProcessBlock: function (M, offset) {
-	            // Swap endian
-	            for (var i = 0; i < 16; i++) {
-	                // Shortcuts
-	                var offset_i = offset + i;
-	                var M_offset_i = M[offset_i];
-
-	                M[offset_i] = (
-	                    (((M_offset_i << 8)  | (M_offset_i >>> 24)) & 0x00ff00ff) |
-	                    (((M_offset_i << 24) | (M_offset_i >>> 8))  & 0xff00ff00)
-	                );
-	            }
-
-	            // Shortcuts
-	            var H = this._hash.words;
-
-	            var M_offset_0  = M[offset + 0];
-	            var M_offset_1  = M[offset + 1];
-	            var M_offset_2  = M[offset + 2];
-	            var M_offset_3  = M[offset + 3];
-	            var M_offset_4  = M[offset + 4];
-	            var M_offset_5  = M[offset + 5];
-	            var M_offset_6  = M[offset + 6];
-	            var M_offset_7  = M[offset + 7];
-	            var M_offset_8  = M[offset + 8];
-	            var M_offset_9  = M[offset + 9];
-	            var M_offset_10 = M[offset + 10];
-	            var M_offset_11 = M[offset + 11];
-	            var M_offset_12 = M[offset + 12];
-	            var M_offset_13 = M[offset + 13];
-	            var M_offset_14 = M[offset + 14];
-	            var M_offset_15 = M[offset + 15];
-
-	            // Working variables
-	            var a = H[0];
-	            var b = H[1];
-	            var c = H[2];
-	            var d = H[3];
-
-	            // Computation
-	            a = FF(a, b, c, d, M_offset_0,  7,  T[0]);
-	            d = FF(d, a, b, c, M_offset_1,  12, T[1]);
-	            c = FF(c, d, a, b, M_offset_2,  17, T[2]);
-	            b = FF(b, c, d, a, M_offset_3,  22, T[3]);
-	            a = FF(a, b, c, d, M_offset_4,  7,  T[4]);
-	            d = FF(d, a, b, c, M_offset_5,  12, T[5]);
-	            c = FF(c, d, a, b, M_offset_6,  17, T[6]);
-	            b = FF(b, c, d, a, M_offset_7,  22, T[7]);
-	            a = FF(a, b, c, d, M_offset_8,  7,  T[8]);
-	            d = FF(d, a, b, c, M_offset_9,  12, T[9]);
-	            c = FF(c, d, a, b, M_offset_10, 17, T[10]);
-	            b = FF(b, c, d, a, M_offset_11, 22, T[11]);
-	            a = FF(a, b, c, d, M_offset_12, 7,  T[12]);
-	            d = FF(d, a, b, c, M_offset_13, 12, T[13]);
-	            c = FF(c, d, a, b, M_offset_14, 17, T[14]);
-	            b = FF(b, c, d, a, M_offset_15, 22, T[15]);
-
-	            a = GG(a, b, c, d, M_offset_1,  5,  T[16]);
-	            d = GG(d, a, b, c, M_offset_6,  9,  T[17]);
-	            c = GG(c, d, a, b, M_offset_11, 14, T[18]);
-	            b = GG(b, c, d, a, M_offset_0,  20, T[19]);
-	            a = GG(a, b, c, d, M_offset_5,  5,  T[20]);
-	            d = GG(d, a, b, c, M_offset_10, 9,  T[21]);
-	            c = GG(c, d, a, b, M_offset_15, 14, T[22]);
-	            b = GG(b, c, d, a, M_offset_4,  20, T[23]);
-	            a = GG(a, b, c, d, M_offset_9,  5,  T[24]);
-	            d = GG(d, a, b, c, M_offset_14, 9,  T[25]);
-	            c = GG(c, d, a, b, M_offset_3,  14, T[26]);
-	            b = GG(b, c, d, a, M_offset_8,  20, T[27]);
-	            a = GG(a, b, c, d, M_offset_13, 5,  T[28]);
-	            d = GG(d, a, b, c, M_offset_2,  9,  T[29]);
-	            c = GG(c, d, a, b, M_offset_7,  14, T[30]);
-	            b = GG(b, c, d, a, M_offset_12, 20, T[31]);
-
-	            a = HH(a, b, c, d, M_offset_5,  4,  T[32]);
-	            d = HH(d, a, b, c, M_offset_8,  11, T[33]);
-	            c = HH(c, d, a, b, M_offset_11, 16, T[34]);
-	            b = HH(b, c, d, a, M_offset_14, 23, T[35]);
-	            a = HH(a, b, c, d, M_offset_1,  4,  T[36]);
-	            d = HH(d, a, b, c, M_offset_4,  11, T[37]);
-	            c = HH(c, d, a, b, M_offset_7,  16, T[38]);
-	            b = HH(b, c, d, a, M_offset_10, 23, T[39]);
-	            a = HH(a, b, c, d, M_offset_13, 4,  T[40]);
-	            d = HH(d, a, b, c, M_offset_0,  11, T[41]);
-	            c = HH(c, d, a, b, M_offset_3,  16, T[42]);
-	            b = HH(b, c, d, a, M_offset_6,  23, T[43]);
-	            a = HH(a, b, c, d, M_offset_9,  4,  T[44]);
-	            d = HH(d, a, b, c, M_offset_12, 11, T[45]);
-	            c = HH(c, d, a, b, M_offset_15, 16, T[46]);
-	            b = HH(b, c, d, a, M_offset_2,  23, T[47]);
-
-	            a = II(a, b, c, d, M_offset_0,  6,  T[48]);
-	            d = II(d, a, b, c, M_offset_7,  10, T[49]);
-	            c = II(c, d, a, b, M_offset_14, 15, T[50]);
-	            b = II(b, c, d, a, M_offset_5,  21, T[51]);
-	            a = II(a, b, c, d, M_offset_12, 6,  T[52]);
-	            d = II(d, a, b, c, M_offset_3,  10, T[53]);
-	            c = II(c, d, a, b, M_offset_10, 15, T[54]);
-	            b = II(b, c, d, a, M_offset_1,  21, T[55]);
-	            a = II(a, b, c, d, M_offset_8,  6,  T[56]);
-	            d = II(d, a, b, c, M_offset_15, 10, T[57]);
-	            c = II(c, d, a, b, M_offset_6,  15, T[58]);
-	            b = II(b, c, d, a, M_offset_13, 21, T[59]);
-	            a = II(a, b, c, d, M_offset_4,  6,  T[60]);
-	            d = II(d, a, b, c, M_offset_11, 10, T[61]);
-	            c = II(c, d, a, b, M_offset_2,  15, T[62]);
-	            b = II(b, c, d, a, M_offset_9,  21, T[63]);
-
-	            // Intermediate hash value
-	            H[0] = (H[0] + a) | 0;
-	            H[1] = (H[1] + b) | 0;
-	            H[2] = (H[2] + c) | 0;
-	            H[3] = (H[3] + d) | 0;
-	        },
-
-	        _doFinalize: function () {
-	            // Shortcuts
-	            var data = this._data;
-	            var dataWords = data.words;
-
-	            var nBitsTotal = this._nDataBytes * 8;
-	            var nBitsLeft = data.sigBytes * 8;
-
-	            // Add padding
-	            dataWords[nBitsLeft >>> 5] |= 0x80 << (24 - nBitsLeft % 32);
-
-	            var nBitsTotalH = Math.floor(nBitsTotal / 0x100000000);
-	            var nBitsTotalL = nBitsTotal;
-	            dataWords[(((nBitsLeft + 64) >>> 9) << 4) + 15] = (
-	                (((nBitsTotalH << 8)  | (nBitsTotalH >>> 24)) & 0x00ff00ff) |
-	                (((nBitsTotalH << 24) | (nBitsTotalH >>> 8))  & 0xff00ff00)
-	            );
-	            dataWords[(((nBitsLeft + 64) >>> 9) << 4) + 14] = (
-	                (((nBitsTotalL << 8)  | (nBitsTotalL >>> 24)) & 0x00ff00ff) |
-	                (((nBitsTotalL << 24) | (nBitsTotalL >>> 8))  & 0xff00ff00)
-	            );
-
-	            data.sigBytes = (dataWords.length + 1) * 4;
-
-	            // Hash final blocks
-	            this._process();
-
-	            // Shortcuts
-	            var hash = this._hash;
-	            var H = hash.words;
-
-	            // Swap endian
-	            for (var i = 0; i < 4; i++) {
-	                // Shortcut
-	                var H_i = H[i];
-
-	                H[i] = (((H_i << 8)  | (H_i >>> 24)) & 0x00ff00ff) |
-	                       (((H_i << 24) | (H_i >>> 8))  & 0xff00ff00);
-	            }
-
-	            // Return final computed hash
-	            return hash;
-	        },
-
-	        clone: function () {
-	            var clone = Hasher.clone.call(this);
-	            clone._hash = this._hash.clone();
-
-	            return clone;
-	        }
-	    });
-
-	    function FF(a, b, c, d, x, s, t) {
-	        var n = a + ((b & c) | (~b & d)) + x + t;
-	        return ((n << s) | (n >>> (32 - s))) + b;
-	    }
-
-	    function GG(a, b, c, d, x, s, t) {
-	        var n = a + ((b & d) | (c & ~d)) + x + t;
-	        return ((n << s) | (n >>> (32 - s))) + b;
-	    }
-
-	    function HH(a, b, c, d, x, s, t) {
-	        var n = a + (b ^ c ^ d) + x + t;
-	        return ((n << s) | (n >>> (32 - s))) + b;
-	    }
-
-	    function II(a, b, c, d, x, s, t) {
-	        var n = a + (c ^ (b | ~d)) + x + t;
-	        return ((n << s) | (n >>> (32 - s))) + b;
-	    }
-
-	    /**
-	     * Shortcut function to the hasher's object interface.
-	     *
-	     * @param {WordArray|string} message The message to hash.
-	     *
-	     * @return {WordArray} The hash.
-	     *
-	     * @static
-	     *
-	     * @example
-	     *
-	     *     var hash = CryptoJS.MD5('message');
-	     *     var hash = CryptoJS.MD5(wordArray);
-	     */
-	    C.MD5 = Hasher._createHelper(MD5);
-
-	    /**
-	     * Shortcut function to the HMAC's object interface.
-	     *
-	     * @param {WordArray|string} message The message to hash.
-	     * @param {WordArray|string} key The secret key.
-	     *
-	     * @return {WordArray} The HMAC.
-	     *
-	     * @static
-	     *
-	     * @example
-	     *
-	     *     var hmac = CryptoJS.HmacMD5(message, key);
-	     */
-	    C.HmacMD5 = Hasher._createHmacHelper(MD5);
-	}(Math));
-
-
-	return CryptoJS.MD5;
-
-}));
-
-}),
-"?f97c": 
-/*!************************!*\
-  !*** crypto (ignored) ***!
-  \************************/
-(function () {
-"use strict";
-/* (ignored) */
-
-}),
-"./node_modules/@nsnanocat/url/URL.mjs": 
-/*!*********************************************!*\
-  !*** ./node_modules/@nsnanocat/url/URL.mjs ***!
-  \*********************************************/
-(function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.d(__webpack_exports__, {
-  URL: () => (URL)
-});
-/* ESM import */var _URLSearchParams_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./URLSearchParams.mjs */ "./node_modules/@nsnanocat/url/URLSearchParams.mjs");
-
-class URL {
-    constructor(url, base) {
-        switch (typeof url) {
-            case "string": {
-                const urlIsValid = /^(blob:|file:)?[a-zA-z]+:\/\/.*/.test(url);
-                const baseIsValid = base ? /^(blob:|file:)?[a-zA-z]+:\/\/.*/.test(base) : false;
-                // If a string is passed for url instead of location or link, then set the properties of the URL instance.
-                if (urlIsValid)
-                    this.href = url;
-                // If the url isn't valid, but the base is, then prepend the base to the url.
-                else if (baseIsValid)
-                    this.href = base + url;
-                // If no valid url or base is given, then throw a type error.
-                else
-                    throw new TypeError('URL string is not valid. If using a relative url, a second argument needs to be passed representing the base URL. Example: new URL("relative/path", "http://www.example.com");');
-                break;
-            }
-            case "object":
-                break;
-            default:
-                throw new TypeError("Invalid argument type.");
-        }
-    }
-    #url = {
-        hash: "",
-        host: "",
-        hostname: "",
-        href: "",
-        password: "",
-        pathname: "",
-        port: Number.NaN,
-        protocol: "",
-        search: "",
-        searchParams: new _URLSearchParams_mjs__WEBPACK_IMPORTED_MODULE_0__.URLSearchParams(""),
-        username: "",
-    };
-    // refer: http://www.ietf.org/rfc/rfc3986.txt
-    static #URLRegExp = /^(?<scheme>([^:\/?#]+):)?(?:\/\/(?<authority>[^\/?#]*))?(?<path>[^?#]*)(?<query>\?([^#]*))?(?<hash>#(.*))?$/;
-    static #AuthorityRegExp = /^(?<authentication>(?<username>[^:]*)(:(?<password>[^@]*))?@)?(?<hostname>[^:]+)(:(?<port>\d+))?$/;
-    get hash() {
-        return this.#url.hash;
-    }
-    set hash(value) {
-        if (value.length !== 0) {
-            if (value.startsWith("#"))
-                value = value.slice(1);
-            this.#url.hash = `#${encodeURIComponent(value)}`;
-        }
-    }
-    get host() {
-        return this.port.length > 0 ? `${this.hostname}:${this.port}` : this.hostname;
-    }
-    set host(value) {
-        [this.hostname, this.port] = value.split(":", 2);
-    }
-    get hostname() {
-        return encodeURIComponent(this.#url.hostname);
-    }
-    set hostname(value) {
-        this.#url.hostname = value ?? "";
-    }
-    get href() {
-        let authority = "";
-        if (this.username.length > 0) {
-            authority += this.username;
-            if (this.password.length > 0)
-                authority += `:${this.password}`;
-            authority += "@";
-        }
-        return `${this.protocol}//${authority}${this.host}${this.pathname}${this.search}${this.hash}`;
-    }
-    set href(value) {
-        if (value.startsWith("blob:") || value.startsWith("file:"))
-            value = value.slice(5);
-        const urlMatch = value.match(URL.#URLRegExp);
-        if (!urlMatch)
-            throw new TypeError("Invalid URL format.");
-        this.protocol = urlMatch.groups.scheme ?? "";
-        const authorityMatch = urlMatch.groups.authority.match(URL.#AuthorityRegExp);
-        this.username = authorityMatch.groups.username ?? "";
-        this.password = authorityMatch.groups.password ?? "";
-        this.hostname = authorityMatch.groups.hostname ?? "";
-        this.port = authorityMatch.groups.port ?? "";
-        this.pathname = urlMatch.groups.path ?? "";
-        this.search = urlMatch.groups.query ?? "";
-        this.hash = urlMatch.groups.hash ?? "";
-    }
-    get origin() {
-        return `${this.protocol}//${this.host}`;
-    }
-    get password() {
-        return encodeURIComponent(this.#url.password);
-    }
-    set password(value) {
-        if (this.username.length > 0)
-            this.#url.password = value ?? "";
-    }
-    get pathname() {
-        return `/${this.#url.pathname}`;
-    }
-    set pathname(value) {
-        value = `${value}`;
-        if (value.startsWith("/"))
-            value = value.slice(1);
-        this.#url.pathname = value;
-    }
-    get port() {
-        if (Number.isNaN(this.#url.port))
-            return "";
-        const port = this.#url.port.toString();
-        if (this.protocol === "ftp:" && port === "21")
-            return "";
-        if (this.protocol === "http:" && port === "80")
-            return "";
-        if (this.protocol === "https:" && port === "443")
-            return "";
-        return port;
-    }
-    set port(value) {
-        switch (value) {
-            case "":
-                this.#url.port = Number.NaN;
-                break;
-            default: {
-                const port = Number.parseInt(value, 10);
-                if (port >= 0 && port < 65535)
-                    this.#url.port = port;
-            }
-        }
-    }
-    get protocol() {
-        return `${this.#url.protocol}:`;
-    }
-    set protocol(value) {
-        if (value.endsWith(":"))
-            value = value.slice(0, -1);
-        this.#url.protocol = value;
-    }
-    get search() {
-        this.#url.search = this.searchParams.toString();
-        if (this.#url.search.length > 0)
-            return `?${this.#url.search}`;
-        else
-            return "";
-    }
-    set search(value) {
-        value = `${value}`;
-        if (value.startsWith("?"))
-            value = value.slice(1);
-        this.#url.search = value;
-        this.#url.searchParams = new _URLSearchParams_mjs__WEBPACK_IMPORTED_MODULE_0__.URLSearchParams(this.#url.search);
-    }
-    get searchParams() {
-        return this.#url.searchParams;
-    }
-    get username() {
-        return encodeURIComponent(this.#url.username);
-    }
-    set username(value) {
-        this.#url.username = value ?? "";
-    }
-    static parse = (url, base) => new URL(url, base);
-    /**
-     * Returns the string representation of the URL.
-     *
-     * @returns {string} The href of the URL.
-     */
-    toString = () => this.href;
-    /**
-     * Converts the URL object properties to a JSON string.
-     *
-     * @returns {string} A JSON string representation of the URL object.
-     */
-    toJSON = () => JSON.stringify({
-        hash: this.hash,
-        host: this.host,
-        hostname: this.hostname,
-        href: this.href,
-        origin: this.origin,
-        password: this.password,
-        pathname: this.pathname,
-        port: this.port,
-        protocol: this.protocol,
-        search: this.search,
-        searchParams: this.searchParams,
-        username: this.username,
-    });
-}
-
-
-}),
-"./node_modules/@nsnanocat/url/URLSearchParams.mjs": 
-/*!*********************************************************!*\
-  !*** ./node_modules/@nsnanocat/url/URLSearchParams.mjs ***!
-  \*********************************************************/
-(function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.d(__webpack_exports__, {
-  URLSearchParams: () => (URLSearchParams)
-});
-class URLSearchParams {
-    constructor(params) {
-        switch (typeof params) {
-            case "string": {
-                if (params.length === 0)
-                    break;
-                if (params.startsWith("?"))
-                    params = params.slice(1);
-                const pairs = params.split("&").map(pair => pair.split("="));
-                pairs.forEach(([key, value]) => {
-                    this.#params.push(key ? decodeURIComponent(key) : key);
-                    this.#values.push(value ? decodeURIComponent(value) : value);
-                });
-                break;
-            }
-            case "object":
-                if (Array.isArray(params)) {
-                    Object.entries(params).forEach(([key, value]) => {
-                        this.#params.push(key);
-                        this.#values.push(value);
-                    });
-                }
-                else if (Symbol.iterator in Object(params)) {
-                    for (const [key, value] of params) {
-                        this.#params.push(key);
-                        this.#values.push(value);
-                    }
-                }
-                break;
-        }
-        this.#updateSearchString(this.#params, this.#values);
-    }
-    // Create 2 seperate arrays for the params and values to make management and lookup easier.
-    #param = "";
-    #params = [];
-    #values = [];
-    // Custom encode function that doesn't encode commas and other safe characters
-    // Only encodes characters that are not allowed in query strings according to RFC 3986
-    #encodeQueryComponent(str) {
-        // encodeURIComponent encodes too many characters, so we need to unencode safe ones
-        return encodeURIComponent(str)
-            .replace(/%2C/g, ",") // Comma is safe
-            .replace(/%21/g, "!") // Exclamation mark
-            .replace(/%27/g, "'") // Single quote
-            .replace(/%28/g, "(") // Left parenthesis
-            .replace(/%29/g, ")") // Right parenthesis
-            .replace(/%2A/g, "*"); // Asterisk
-    }
-    // Update the search property of the URL instance with the new params and values.
-    #updateSearchString(params, values) {
-        if (params.length === 0)
-            this.#param = "";
-        else
-            this.#param = params
-                .map((param, index) => {
-                switch (typeof values[index]) {
-                    case "object":
-                        return `${this.#encodeQueryComponent(param)}=${this.#encodeQueryComponent(JSON.stringify(values[index]))}`;
-                    case "boolean":
-                    case "number":
-                    case "string":
-                        return `${this.#encodeQueryComponent(param)}=${this.#encodeQueryComponent(values[index])}`;
-                    case "undefined":
-                    default:
-                        return this.#encodeQueryComponent(param);
-                }
-            })
-                .join("&");
-    }
-    // Add a given param with a given value to the end.
-    append(name, value) {
-        this.#params.push(name);
-        this.#values.push(value);
-        this.#updateSearchString(this.#params, this.#values);
-    }
-    // Remove all occurances of a given param
-    delete(name, value) {
-        while (this.#params.indexOf(name) > -1) {
-            this.#values.splice(this.#params.indexOf(name), 1);
-            this.#params.splice(this.#params.indexOf(name), 1);
-        }
-        this.#updateSearchString(this.#params, this.#values);
-    }
-    // Return an array to be structured in this way: [[param1, value1], [param2, value2]] to mimic the native method's ES6 iterator.
-    entries() {
-        return this.#params.map((param, index) => [param, this.#values[index]]);
-    }
-    // Return the value matched to the first occurance of a given param.
-    get(name) {
-        return this.#values[this.#params.indexOf(name)];
-    }
-    // Return all values matched to all occurances of a given param.
-    getAll(name) {
-        return this.#values.filter((value, index) => this.#params[index] === name);
-    }
-    // Return a boolean to indicate whether a given param exists.
-    has(name, value) {
-        return this.#params.indexOf(name) > -1;
-    }
-    // Return an array of the param names to mimic the native method's ES6 iterator.
-    keys() {
-        return this.#params;
-    }
-    // Set a given param to a given value.
-    set(name, value) {
-        if (this.#params.indexOf(name) === -1) {
-            this.append(name, value); // If the given param doesn't already exist, append it.
-        }
-        else {
-            let first = true;
-            const newValues = [];
-            // If the param already exists, change the value of the first occurance and remove any remaining occurances.
-            this.#params = this.#params.filter((currentParam, index) => {
-                if (currentParam !== name) {
-                    newValues.push(this.#values[index]);
-                    return true;
-                    // If the currentParam matches the one being changed and it's the first one, keep the param and change its value to the given one.
-                }
-                else if (first) {
-                    first = false;
-                    newValues.push(value);
-                    return true;
-                }
-                // If the currentParam matches the one being changed, but it's not the first, remove it.
-                return false;
-            });
-            this.#values = newValues;
-            this.#updateSearchString(this.#params, this.#values);
-        }
-    }
-    // Sort all key/value pairs, if any, by their keys then by their values.
-    sort() {
-        // Call entries to make sorting easier, then rewrite the params and values in the new order.
-        const sortedPairs = this.entries().sort();
-        this.#params = [];
-        this.#values = [];
-        sortedPairs.forEach(pair => {
-            this.#params.push(pair[0]);
-            this.#values.push(pair[1]);
-        });
-        this.#updateSearchString(this.#params, this.#values);
-    }
-    // Return the search string without the '?'.
-    toString = () => this.#param;
-    // Return and array of the param values to mimic the native method's ES6 iterator..
-    values = () => this.#values.values();
-}
-
-
-}),
 "./node_modules/@nsnanocat/util/getStorage.mjs": 
 /*!*****************************************************!*\
   !*** ./node_modules/@nsnanocat/util/getStorage.mjs ***!
   \*****************************************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   getStorage: () => (getStorage)
 });
@@ -5013,10 +3543,10 @@ function string2number(string) {
   !*** ./node_modules/@nsnanocat/util/index.js ***!
   \***********************************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   $app: () => (/* reexport safe */ _lib_app_mjs__WEBPACK_IMPORTED_MODULE_0__.$app),
   Console: () => (/* reexport safe */ _polyfill_Console_mjs__WEBPACK_IMPORTED_MODULE_5__.Console),
+  Storage: () => (/* reexport safe */ _polyfill_Storage_mjs__WEBPACK_IMPORTED_MODULE_9__.Storage),
   done: () => (/* reexport safe */ _lib_done_mjs__WEBPACK_IMPORTED_MODULE_1__.done),
   fetch: () => (/* reexport safe */ _polyfill_fetch_mjs__WEBPACK_IMPORTED_MODULE_6__.fetch),
   getStorage: () => (/* reexport safe */ _getStorage_mjs__WEBPACK_IMPORTED_MODULE_10__.getStorage)
@@ -5051,7 +3581,6 @@ __webpack_require__.d(__webpack_exports__, {
   !*** ./node_modules/@nsnanocat/util/lib/app.mjs ***!
   \**************************************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   $app: () => ($app)
 });
@@ -5089,7 +3618,6 @@ const $app = (() => {
   !*** ./node_modules/@nsnanocat/util/lib/done.mjs ***!
   \***************************************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   done: () => (done)
 });
@@ -5172,7 +3700,6 @@ function done(object = {}) {
   !*** ./node_modules/@nsnanocat/util/lib/notification.mjs ***!
   \***********************************************************/
 (function (__unused_webpack___webpack_module__, __unused_webpack___webpack_exports__, __webpack_require__) {
-"use strict";
 /* ESM import */var _app_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.mjs */ "./node_modules/@nsnanocat/util/lib/app.mjs");
 /* ESM import */var _polyfill_Console_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../polyfill/Console.mjs */ "./node_modules/@nsnanocat/util/polyfill/Console.mjs");
 
@@ -5334,7 +3861,6 @@ const MutableContent = content => {
   !*** ./node_modules/@nsnanocat/util/lib/time.mjs ***!
   \***************************************************/
 (function () {
-"use strict";
 /**
  * time
  * 时间格式化
@@ -5373,7 +3899,6 @@ function time(format, ts) {
   !*** ./node_modules/@nsnanocat/util/lib/wait.mjs ***!
   \***************************************************/
 (function () {
-"use strict";
 /**
  * wait
  *
@@ -5392,7 +3917,6 @@ function wait(delay = 1000) {
   !*** ./node_modules/@nsnanocat/util/polyfill/Console.mjs ***!
   \***********************************************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   Console: () => (Console)
 });
@@ -5580,7 +4104,6 @@ class Console {
   !*** ./node_modules/@nsnanocat/util/polyfill/Lodash.mjs ***!
   \**********************************************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   Lodash: () => (Lodash)
 });
@@ -5664,7 +4187,6 @@ class Lodash {
   !*** ./node_modules/@nsnanocat/util/polyfill/StatusTexts.mjs ***!
   \***************************************************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   StatusTexts: () => (StatusTexts)
 });
@@ -5738,7 +4260,6 @@ const StatusTexts = {
   !*** ./node_modules/@nsnanocat/util/polyfill/Storage.mjs ***!
   \***********************************************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   Storage: () => (Storage)
 });
@@ -6009,7 +4530,6 @@ class Storage {
   !*** ./node_modules/@nsnanocat/util/polyfill/fetch.mjs ***!
   \*********************************************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   fetch: () => (fetch)
 });
@@ -6223,1101 +4743,107 @@ async function fetch(resource, options = {}) {
 
 
 }),
-"./src/WebVTT/WebVTT.mjs": 
-/*!*******************************!*\
-  !*** ./src/WebVTT/WebVTT.mjs ***!
-  \*******************************/
-(function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (WebVTT)
-});
-// refer: https://www.w3.org/TR/webvtt1/
-class WebVTT {
-	static name = "WebVTT";
-	static version = "2.2.0";
-	static about = () => console.log(`\n🟧 ${this.name} v${this.version}\n`);
-
-	static parse(vtt = new String, options = { milliseconds: true, timeStamp: true, line: "single", lineBreak: "\n" }) {
-		const WebVTTCueRegex = (options.milliseconds) ? /^((?<index>\d+)(\r\n|\r|\n))?(?<timing>(?<startTime>[0-9:.,]+) --> (?<endTime>[0-9:.,]+)) ?(?<settings>.+)?[^](?<text>[\s\S]*)?$/
-			: /^((?<index>\d+)(\r\n|\r|\n))?(?<timing>(?<startTime>[0-9:]+)[0-9.,]+ --> (?<endTime>[0-9:]+)[0-9.,]+) ?(?<settings>.+)?[^](?<text>[\s\S]*)?$/
-		const Array = vtt.split(/\r\n\r\n|\r\r|\n\n/);
-		const Json = { headers: {}, comments: [], style: "", body: [] };
-
-		Array.forEach(item => {
-			item = item.trim();
-			switch (item.substring(0, 5).trim()) {
-				case "WEBVT": {
-					let cues = item.split(/\r\n|\r|\n/);
-					Json.headers.type = cues.shift();
-					Json.headers.options = cues;
-					break;
-				};
-				case "NOTE": {
-					Json.comments.push(item);
-					break;
-				};
-				case "STYLE": {
-					let cues = item.split(/\r\n|\r|\n/);
-					cues.shift();
-					Json.style = cues.join(options.lineBreak);
-					break;
-				};
-				default:
-					let cue = item.match(WebVTTCueRegex)?.groups;
-					if (cue) {
-						if (Json.headers?.type !== "WEBVTT") {
-							cue.timing = cue?.timing?.replace?.(",", ".");
-							cue.startTime = cue?.startTime?.replace?.(",", ".");
-							cue.endTime = cue?.endTime?.replace?.(",", ".");
-						}
-						if (options.timeStamp) {
-							let ISOString = cue?.startTime?.replace?.(/(.*)/, "1970-01-01T$1Z")
-							cue.timeStamp = (options.milliseconds) ? Date.parse(ISOString) : Date.parse(ISOString) / 1000;
-						}
-						cue.text = cue?.text?.trimEnd?.();
-						switch (options.line) {
-							case "single":
-								cue.text = cue?.text?.replace?.(/\r\n|\r|\n/, " ");
-								break;
-							case "multi":
-								cue.text = cue?.text?.split?.(/\r\n|\r|\n/);
-								break;
-						};
-						Json.body.push(cue);
-					};
-					break;
-			}
-		});
-		return Json;
-	};
-
-	static stringify(json = { headers: {}, comments: [], style: "", body: [] }, options = { milliseconds: true, timeStamp: true, line: "single", lineBreak: "\n" }) {
-		let vtt = [
-			json.headers = [json.headers?.type || "", json.headers?.options || ""].flat(Infinity).join(options.lineBreak),
-			json.comments = json?.comments?.join?.(options.lineBreak),
-			json.style = (json?.style?.length > 0) ? ["STYLE", json.style].join(options.lineBreak) : "",
-			json.body = json.body.map(item => {
-				if (Array.isArray(item.text)) item.text = item.text.join(options.lineBreak);
-				item = `${(item.index) ? item.index + options.lineBreak : ""}${item.timing} ${item?.settings ?? ""}${options.lineBreak}${item.text}`;
-				return item;
-			}).join(options.lineBreak + options.lineBreak)
-		].join(options.lineBreak + options.lineBreak).trim() + options.lineBreak + options.lineBreak;
-		return vtt;
-	};
-};
-
-
-}),
-"./src/XML/XML.mjs": 
+"./src/LRC/LRC.mjs": 
 /*!*************************!*\
-  !*** ./src/XML/XML.mjs ***!
+  !*** ./src/LRC/LRC.mjs ***!
   \*************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (XML)
+  "default": () => (LRCs)
 });
-// refer: https://github.com/Peng-YM/QuanX/blob/master/Tools/XMLParser/xml-parser.js
-// refer: https://goessner.net/download/prj/jsonxml/
-class XML {
-	static name = "XML";
-	static version = "0.4.2";
+class LRCs {
+	static name = "LRC";
+	static version = "0.5.4";
 	static about = () => console.log(`\n🟧 ${this.name} v${this.version}\n`);
-	
-	static #ATTRIBUTE_KEY = "@";
-	static #CHILD_NODE_KEY = "#";
-	static #UNESCAPE = {
-		"&amp;": "&",
-		"&lt;": "<",
-		"&gt;": ">",
-		"&apos;": "'",
-		"&quot;": '"'
-	};
-	static #ESCAPE = {
-		"&": "&amp;",
-		"<": "&lt;",
-		">": "&gt;",
-		"'": "&apos;",
-		'"': "&quot;"
-	};
 
-	static parse(xml = new String, reviver = "") {
-		const UNESCAPE = this.#UNESCAPE;
-		const ATTRIBUTE_KEY = this.#ATTRIBUTE_KEY;
-		const CHILD_NODE_KEY = this.#CHILD_NODE_KEY;
-		const DOM = toDOM(xml);
-		let json = fromXML(DOM, reviver);
-		return json;
-
-		/***************** Fuctions *****************/
-		function toDOM(text) {
-			const list = text.replace(/^[ \t]+/gm, "")
-				.split(/<([^!<>?](?:'[\S\s]*?'|"[\S\s]*?"|[^'"<>])*|!(?:--[\S\s]*?--|\[[^\[\]'"<>]+\[[\S\s]*?]]|DOCTYPE[^\[<>]*?\[[\S\s]*?]|(?:ENTITY[^"<>]*?"[\S\s]*?")?[\S\s]*?)|\?[\S\s]*?\?)>/);
-			const length = list.length;
-
-			// root element
-			const root = { children: [] };
-			let elem = root;
-
-			// dom tree stack
-			const stack = [];
-
-			// parse
-			for (let i = 0; i < length;) {
-				// text node
-				const str = list[i++];
-				if (str) appendText(str);
-
-				// child node
-				const tag = list[i++];
-				if (tag) parseNode(tag);
-			}
-			return root;
-			/***************** Fuctions *****************/
-			function parseNode(tag) {
-				const tags = tag.split(" ");
-				const name = tags.shift();
-				const length = tags.length;
-				let child = {};
-				switch (name[0]) {
-					case "/":
-						// close tag
-						const closed = tag.replace(/^\/|[\s\/].*$/g, "").toLowerCase();
-						while (stack.length) {
-							const tagName = elem?.name?.toLowerCase?.();
-							elem = stack.pop();
-							if (tagName === closed) break;
-						}
-						break;
-					case "?":
-						// XML declaration
-						child.name = name;
-						child.raw = tags.join(" ");
-						appendChild(child);
-						break;
-					case "!":
-						if (/!\[CDATA\[(.+)\]\]/.test(tag)) {
-							// CDATA section
-							child.name = "!CDATA";
-							//child.raw = tag.slice(9, -2);
-							child.raw = tag.match(/!\[CDATA\[(?<raw>.+)\]\]/)?.groups?.raw;
-							//appendText(tag.slice(9, -2));
-						} else if (/!--(.+)--/.test(tag)) {
-							// Comment section
-							child.name = "!--";
-							child.raw = tag.match(/!--(?<raw>.+)--/)?.groups?.raw;
-						} else {
-							// Comment section
-							child.name = name;
-							child.raw = tags.join(" ");
-						};
-						appendChild(child);
-						break;
-					default:
-						child = openTag(tag);
-						appendChild(child);
-						switch ((tags?.[length - 1] ?? name).slice(-1)) {
-							case "/":
-								//child.hasChild = false; // emptyTag
-								delete child.children; // emptyTag
-								break;
-							default:
-								switch (name) {
-									case "link":
-										//child.hasChild = false; // emptyTag
-										delete child.children; // emptyTag
-										break;
-									default:
-										stack.push(elem); // openTag
-										elem = child;
-										break;
-								};
-								break;
-						};
-						break;
-				};
-
-				function openTag(tag) {
-					const elem = { children: [] };
-					tag = tag.replace(/\s*\/?$/, "");
-					const pos = tag.search(/[\s='"\/]/);
-					if (pos < 0) {
-						elem.name = tag;
-					} else {
-						elem.name = tag.substr(0, pos);
-						elem.tag = tag.substr(pos);
-					}
-					return elem;
-				};
+	static toSpotify(lrc = "", options = { lineBreak: "\n" }) {
+		console.log(`☑️ LRC.toSpotify`, "");
+		let lyric = lrc?.split?.(options.lineBreak)?.filter?.(Boolean)?.map?.(line => {
+			const Line = {
+				"startTimeMs": 0,
+				"words": "",
+				"syllables": [],
+				"endTimeMs": 0
 			};
-
-			function appendText(str) {
-				//str = removeSpaces(str);
-				str = removeBreakLine(str);
-				//str = str?.trim?.();
-				if (str) appendChild(unescapeXML(str));
-
-				function removeBreakLine(str) {
-					return str?.replace?.(/^(\r\n|\r|\n|\t)+|(\r\n|\r|\n|\t)+$/g, "");
-				}
-			}
-
-			function appendChild(child) {
-				elem.children.push(child);
-			}
-		};
-		/***************** Fuctions *****************/
-		function fromPlist(elem, reviver) {
-			let object;
-			switch (typeof elem) {
-				case "string":
-				case "undefined":
-					object = elem;
+			switch (line?.trim?.()?.substring?.(0, 1)) {
+				case "{":
+					line = JSON.parse(line);
+					//console.log(`🚧 调试信息, line: ${JSON.stringify(line)}`, "");
+					Line.startTimeMs = (line.t < 0) ? 0 : line.t;
+					Line.words = line?.c?.map?.(word => word.tx).join("");
 					break;
-				case "object":
-					//default:
-					const name = elem.name;
-					const children = elem.children;
-
-					object = {};
-
-					switch (name) {
-						case "plist":
-							let plist = fromPlist(children[0], reviver);
-							object = Object.assign(object, plist)
-							break;
-						case "dict":
-							let dict = children.map(child => fromPlist(child, reviver));
-							dict = chunk(dict, 2);
-							object = Object.fromEntries(dict);
-							break;
-						case "array":
-							if (!Array.isArray(object)) object = [];
-							object = children.map(child => fromPlist(child, reviver));
-							break;
-						case "key":
-							const key = children[0];
-							object = key;
-							break;
-						case "true":
-						case "false":
-							const boolean = name;
-							object = JSON.parse(boolean);
-							break;
-						case "integer":
-							const integer = children[0];
-							//object = parseInt(integer);
-							object = BigInt(integer);
-							break;
-						case "real":
-							const real = children[0];
-							//const digits = real.split(".")[1]?.length || 0;
-							object = parseFloat(real)//.toFixed(digits);
-							break;
-						case "string":
-							const string = children[0];
-							object = string;
-							break;
-					};
-					if (reviver) object = reviver(name || "", object);
-					break;
-			}
-			return object;
-
-			/** 
-			 * Chunk Array
-			 * @author VirgilClyne
-			 * @param {Array} source - source
-			 * @param {Number} length - number
-			 * @return {Array<*>} target
-			 */
-			function chunk(source, length) {
-				var index = 0, target = [];
-				while (index < source.length) target.push(source.slice(index, index += length));
-				return target;
-			};
-		}
-
-		function fromXML(elem, reviver) {
-			let object;
-			switch (typeof elem) {
-				case "string":
-				case "undefined":
-					object = elem;
-					break;
-				case "object":
-					//default:
-					const raw = elem.raw;
-					const name = elem.name;
-					const tag = elem.tag;
-					const children = elem.children;
-
-					if (raw) object = raw;
-					else if (tag) object = parseAttribute(tag, reviver);
-					else if (!children) object = { [name]: undefined };
-					else object = {};
-
-					if (name === "plist") object = Object.assign(object, fromPlist(children[0], reviver));
-					else children?.forEach?.((child, i) => {
-						if (typeof child === "string") addObject(object, CHILD_NODE_KEY, fromXML(child, reviver), undefined)
-						else if (!child.tag && !child.children && !child.raw) addObject(object, child.name, fromXML(child, reviver), children?.[i - 1]?.name)
-						else addObject(object, child.name, fromXML(child, reviver), undefined)
-					});
-					if (children && children.length === 0) addObject(object, CHILD_NODE_KEY, null, undefined);
-					/*
-					if (Object.keys(object).length === 0) {
-						if (elem.name) object[elem.name] = (elem.hasChild === false) ? null : "";
-						else object = (elem.hasChild === false) ? null : "";
-					}
-					*/
-
-					//if (Object.keys(object).length === 0) addObject(object, elem.name, (elem.hasChild === false) ? null : "");
-					//if (Object.keys(object).length === 0) object = (elem.hasChild === false) ? undefined : "";
-					if (reviver) object = reviver(name || "", object);
-					break;
-			}
-			return object;
-			/***************** Fuctions *****************/
-			function parseAttribute(tag, reviver) {
-				if (!tag) return;
-				const list = tag.split(/([^\s='"]+(?:\s*=\s*(?:'[\S\s]*?'|"[\S\s]*?"|[^\s'"]*))?)/);
-				const length = list.length;
-				let attributes, val;
-
-				for (let i = 0; i < length; i++) {
-					let str = removeSpaces(list[i]);
-					//let str = removeBreakLine(list[i]);
-					//let str = list[i]?.trim?.();
-					if (!str) continue;
-
-					if (!attributes) {
-						attributes = {};
-					}
-
-					const pos = str.indexOf("=");
-					if (pos < 0) {
-						// bare attribute
-						str = ATTRIBUTE_KEY + str;
-						val = null;
-					} else {
-						// attribute key/value pair
-						val = str.substr(pos + 1).replace(/^\s+/, "");
-						str = ATTRIBUTE_KEY + str.substr(0, pos).replace(/\s+$/, "");
-
-						// quote: foo="FOO" bar='BAR'
-						const firstChar = val[0];
-						const lastChar = val[val.length - 1];
-						if (firstChar === lastChar && (firstChar === "'" || firstChar === '"')) {
-							val = val.substr(1, val.length - 2);
-						}
-
-						val = unescapeXML(val);
-					}
-					if (reviver) val = reviver(str, val);
-
-					addObject(attributes, str, val);
-				}
-
-				return attributes;
-
-				function removeSpaces(str) {
-					//return str && str.replace(/^\s+|\s+$/g, "");
-					return str?.trim?.();
-				}
-			}
-
-			function addObject(object, key, val, prevKey = key) {
-				if (typeof val === "undefined") return;
-				else {
-					const prev = object[prevKey];
-					//const curr = object[key];
-					if (Array.isArray(prev)) prev.push(val);
-					else if (prev) object[prevKey] = [prev, val];
-					else object[key] = val;
-				}
-			}
-		}
-
-		function unescapeXML(str) {
-			return str.replace(/(&(?:lt|gt|amp|apos|quot|#(?:\d{1,6}|x[0-9a-fA-F]{1,5}));)/g, function (str) {
-				if (str[1] === "#") {
-					const code = (str[2] === "x") ? parseInt(str.substr(3), 16) : parseInt(str.substr(2), 10);
-					if (code > -1) return String.fromCharCode(code);
-				}
-				return UNESCAPE[str] || str;
-			});
-		}
-
-	};
-
-	static stringify(json = new Object, tab = "") {
-		const ESCAPE = this.#ESCAPE;
-		const ATTRIBUTE_KEY = this.#ATTRIBUTE_KEY;
-		const CHILD_NODE_KEY = this.#CHILD_NODE_KEY;
-		let XML = "";
-		for (let elem in json) XML += toXml(json[elem], elem, "");
-		XML = tab ? XML.replace(/\t/g, tab) : XML.replace(/\t|\n/g, "");
-		return XML;
-		/***************** Fuctions *****************/
-		function toXml(Elem, Name, Ind) {
-			let xml = "";
-			switch (typeof Elem) {
-				case "object":
-					if (Array.isArray(Elem)) {
-						xml = Elem.reduce(
-							(prevXML, currXML) => prevXML += `${Ind}${toXml(currXML, Name, `${Ind}\t`)}\n`,
-							""
-						);
-					} else {
-						let attribute = "";
-						let hasChild = false;
-						for (let name in Elem) {
-							if (name[0] === ATTRIBUTE_KEY) {
-								attribute += ` ${name.substring(1)}=\"${Elem[name].toString()}\"`;
-								delete Elem[name];
-							} else if (Elem[name] === undefined) Name = name;
-							else hasChild = true;
-						}
-						xml += `${Ind}<${Name}${attribute}${(hasChild || Name === "link") ? "" : "/"}>`;
-
-						if (hasChild) {
-							if (Name === "plist") xml += toPlist(Elem, Name, `${Ind}\t`);
-							else {
-								for (let name in Elem) {
-									switch (name) {
-										case CHILD_NODE_KEY:
-											xml += Elem[name] ?? "";
-											break;
-										default:
-											xml += toXml(Elem[name], name, `${Ind}\t`);
-											break;
-									};
-								};
+				case "[":
+					const LineRegex = /^\[(?:(?<startTimeMs>(\d\d:\d\d\.\d\d\d?|\d+,\d+))|(?<tag>\w+:.*))\](?<words>.*)?/;
+					const SyllableRegex = /\((?<startTimeMs>\d+),\d+,\d+\)/g;
+					line = line.match(LineRegex)?.groups;
+					if (line?.startTimeMs?.includes(":")) {
+						Line.startTimeMs = (line?.startTimeMs ?? "0:0").split(":");
+						Line.startTimeMs = Math.round((parseInt(Line.startTimeMs[0], 10) * 60 + parseFloat(Line.startTimeMs[1], 10)) * 1000);
+						if (Line.startTimeMs < 0) Line.startTimeMs = 0;
+					} else if (line?.startTimeMs?.includes(",")) Line.startTimeMs = parseInt(line?.startTimeMs?.split(",")?.[0], 10);
+					if (SyllableRegex.test(line?.words)) {
+						let index = 0, syllablesArray = [], syllablesOriginArray = line?.words?.split(SyllableRegex);
+						syllablesOriginArray.shift();
+						while (index < syllablesOriginArray.length) syllablesArray.push(syllablesOriginArray.slice(index, index += 2));
+						syllablesArray.forEach((syllables) => {
+							Line.words += syllables[1];
+							let syllable = {
+								"startTimeMs": parseInt(syllables[0], 10),
+								"numChars": syllables[1].length
 							};
-							xml += (xml.slice(-1) === "\n" ? Ind : "") + `</${Name}>`;
-						};
-					};
-					break;
-				case "string":
-					switch (Name) {
-						case "?xml":
-							xml += `${Ind}<${Name} ${Elem.toString()}>`;
-							break;
-						case "?":
-							xml += `${Ind}<${Name}${Elem.toString()}${Name}>`;
-							break;
-						case "!--":
-							xml += `${Ind}<!--${Elem.toString()}-->`;
-							break;
-						case "!DOCTYPE":
-							xml += `${Ind}<${Name} ${Elem.toString()}>`;
-							break;
-						case "!CDATA":
-							xml += `${Ind}<![CDATA[${Elem.toString()}]]>`;
-							break;
-						case CHILD_NODE_KEY:
-							xml += Elem;
-							break;
-						default:
-							xml += `${Ind}<${Name}>${Elem.toString()}</${Name}>`;
-							break;
-					};
-					break;
-				case "undefined":
-					xml += Ind + `<${Name.toString()}/>`;
+							Line.syllables.push(syllable);
+						});
+					} else Line.words = line?.words?.decodeHTML?.() ?? "";
 					break;
 			};
-			return xml;
-		};
-
-		function toPlist(Elem, Name, Ind) {
-			let plist = "";
-			switch (typeof Elem) {
-				case "boolean":
-					plist = `${Ind}<${Elem.toString()}/>`;
-					break;
-				case "number":
-					plist = `${Ind}<real>${Elem.toString()}</real>`;
-					break;
-				case "bigint":
-					plist = `${Ind}<integer>${Elem.toString()}</integer>`;
-					break;
-				case "string":
-					plist = `${Ind}<string>${Elem.toString()}</string>`;
-					break;
-				case "object":
-					let array = "";
-					if (Array.isArray(Elem)) {
-						for (var i = 0, n = Elem.length; i < n; i++) array += `${Ind}${toPlist(Elem[i], Name, `${Ind}\t`)}`;
-						plist = `${Ind}<array>${array}${Ind}</array>`;
-					} else {
-						let dict = "";
-						Object.entries(Elem).forEach(([key, value]) => {
-							dict += `${Ind}<key>${key}</key>`;
-							dict += toPlist(value, key, Ind);
-						});
-						plist = `${Ind}<dict>${dict}${Ind}</dict>`;
-					};
-					break;
-			}
-			return plist;
-		};
-	};
-}
-
-
-}),
-"./src/class/Translate.mjs": 
-/*!*********************************!*\
-  !*** ./src/class/Translate.mjs ***!
-  \*********************************/
-(function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (Translate)
-});
-/* ESM import */var _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @nsnanocat/util */ "./node_modules/@nsnanocat/util/index.js");
-/* ESM import */var crypto_js_md5_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! crypto-js/md5.js */ "./node_modules/crypto-js/md5.js");
-
-
-
-class Translate {
-	constructor(options = {}) {
-		this.Name = "Translate";
-		this.Version = "1.0.7";
-		_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.log(`🟧 ${this.Name} v${this.Version}`);
-		this.Source = "AUTO";
-		this.Target = "ZH";
-		this.API = {};
-		Object.assign(this, options);
-	}
-
-	#LanguagesCode = {
-		Google: {
-			AUTO: "auto",
-			AF: "af",
-			AM: "am",
-			AR: "ar",
-			AS: "as",
-			AY: "ay",
-			AZ: "az",
-			BG: "bg",
-			BE: "be",
-			BM: "bm",
-			BN: "bn",
-			BHO: "bho",
-			CS: "cs",
-			DA: "da",
-			DE: "de",
-			EL: "el",
-			EU: "eu",
-			EN: "en",
-			"EN-GB": "en",
-			"EN-US": "en",
-			"EN-US SDH": "en",
-			ES: "es",
-			"ES-419": "es",
-			"ES-ES": "es",
-			ET: "et",
-			FI: "fi",
-			FR: "fr",
-			"FR-CA": "fr",
-			HU: "hu",
-			ID: "id",
-			IS: "is",
-			IT: "it",
-			JA: "ja",
-			KM: "km",
-			KO: "ko",
-			LT: "lt",
-			LV: "lv",
-			NL: "nl",
-			NO: "no",
-			PL: "pl",
-			PT: "pt",
-			"PT-PT": "pt",
-			"PT-BR": "pt",
-			PA: "pa",
-			RO: "ro",
-			RU: "ru",
-			SK: "sk",
-			SL: "sl",
-			SQ: "sq",
-			ST: "st",
-			SV: "sv",
-			TH: "th",
-			TR: "tr",
-			UK: "uk",
-			UR: "ur",
-			VI: "vi",
-			ZH: "zh",
-			"ZH-HANS": "zh-CN",
-			"ZH-HK": "zh-TW",
-			"ZH-HANT": "zh-TW",
-		},
-		Microsoft: {
-			AUTO: "",
-			AF: "af",
-			AM: "am",
-			AR: "ar",
-			AS: "as",
-			AY: "ay",
-			AZ: "az",
-			BG: "bg",
-			BE: "be",
-			BM: "bm",
-			BN: "bn",
-			BHO: "bho",
-			CS: "cs",
-			DA: "da",
-			DE: "de",
-			EL: "el",
-			EU: "eu",
-			EN: "en",
-			"EN-GB": "en",
-			"EN-US": "en",
-			"EN-US SDH": "en",
-			ES: "es",
-			"ES-419": "es",
-			"ES-ES": "es",
-			ET: "et",
-			FI: "fi",
-			FR: "fr",
-			"FR-CA": "fr-ca",
-			HU: "hu",
-			ID: "id",
-			IS: "is",
-			IT: "it",
-			JA: "ja",
-			KM: "km",
-			KO: "ko",
-			LT: "lt",
-			LV: "lv",
-			NL: "nl",
-			NO: "no",
-			PL: "pl",
-			PT: "pt",
-			"PT-PT": "pt-pt",
-			"PT-BR": "pt",
-			PA: "pa",
-			RO: "ro",
-			RU: "ru",
-			SK: "sk",
-			SL: "sl",
-			SQ: "sq",
-			ST: "st",
-			SV: "sv",
-			TH: "th",
-			TR: "tr",
-			UK: "uk",
-			UR: "ur",
-			VI: "vi",
-			ZH: "zh-Hans",
-			"ZH-HANS": "zh-Hans",
-			"ZH-HK": "yue",
-			"ZH-HANT": "zh-Hant",
-		},
-		DeepL: { AUTO: "", BG: "BG", CS: "CS", DA: "DA", DE: "de", EL: "el", EN: "EN", ES: "ES", ET: "ET", FI: "FI", FR: "FR", HU: "HU", ID: "ID", IT: "IT", JA: "JA", KO: "ko", LT: "LT", LV: "LV", NL: "NL", PL: "PL", PT: "PT", RO: "RO", RU: "RU", SK: "SK", SL: "SL", SV: "SV", TR: "TR", ZH: "ZH" },
-		Baidu: {
-			AUTO: "auto",
-			AR: "ara",
-			CS: "cs",
-			DA: "dan",
-			DE: "de",
-			EL: "el",
-			EN: "en",
-			ES: "spa",
-			ET: "est",
-			FI: "fin",
-			FR: "fra",
-			HU: "hu",
-			IT: "it",
-			JA: "jp",
-			KO: "kor",
-			NL: "nl",
-			PL: "pl",
-			PT: "pt",
-			RO: "RO",
-			RU: "rom",
-			SL: "slo",
-			SV: "swe",
-			TH: "th",
-			VI: "vie",
-			ZH: "zh",
-			"ZH-HANS": "zh",
-			"ZH-HK": "cht",
-			"ZH-HANT": "cht",
-		},
-	};
-
-	#UAPool = [
-		"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36", // 13.5%
-		"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36", // 6.6%
-		"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0", // 6.4%
-		"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0", // 6.2%
-		"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36", // 5.2%
-		"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36", // 4.8%
-		"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
-		"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134",
-		"Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
-		"Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1",
-		"Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-		"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0",
-	];
-
-	#Length = {
-		Google: 120,
-		GoogleCloud: 120,
-		Microsoft: 99,
-		Azure: 99,
-		DeepL: 49,
-	};
-
-	async Google(text = [], source = this.Source, target = this.Target) {
-		text = Array.isArray(text) ? text : [text];
-		source = this.#LanguagesCode.Google[source] ?? this.#LanguagesCode.Google[source?.split?.(/[-_]/)?.[0]] ?? source.toLowerCase();
-		target = this.#LanguagesCode.Google[target] ?? this.#LanguagesCode.Google[target?.split?.(/[-_]/)?.[0]] ?? target.toLowerCase();
-		const BaseRequest = [
-			{
-				// Google API
-				url: "https://translate.googleapis.com/translate_a/single?client=gtx&dt=t",
-				headers: {
-					Accept: "*/*",
-					"User-Agent": this.#UAPool[Math.floor(Math.random() * this.#UAPool.length)], // 随机UA
-					Referer: "https://translate.google.com",
-				},
-			},
-			{
-				// Google Dictionary Chrome extension https://chrome.google.com/webstore/detail/google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja
-				url: "https://clients5.google.com/translate_a/t?client=dict-chrome-ex",
-				headers: {
-					Accept: "*/*",
-					"User-Agent": this.#UAPool[Math.floor(Math.random() * this.#UAPool.length)], // 随机UA
-				},
-			},
-			{
-				// Google Translate App
-				url: "https://translate.google.com/translate_a/single?client=it&dt=qca&dt=t&dt=rmt&dt=bd&dt=rms&dt=sos&dt=md&dt=gt&dt=ld&dt=ss&dt=ex&otf=2&dj=1&hl=en&ie=UTF-8&oe=UTF-8",
-				headers: {
-					Accept: "*/*",
-					"User-Agent": "GoogleTranslate/6.29.59279 (iPhone; iOS 15.4; en; iPhone14,2)",
-				},
-			},
-			{
-				// Google Translate App
-				url: "https://translate.googleapis.com/translate_a/single?client=gtx&dj=1&source=bubble&dt=t&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&dt=t&dt=at",
-				headers: {
-					Accept: "*/*",
-					"User-Agent": "GoogleTranslate/6.29.59279 (iPhone; iOS 15.4; en; iPhone14,2)",
-				},
-			},
-		];
-		const request = BaseRequest[Math.floor(Math.random() * (BaseRequest.length - 2))]; // 随机Request, 排除最后两项
-		request.url = `${request.url}&sl=${source}&tl=${target}&q=${encodeURIComponent(text.join("\r"))}`;
-		return await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(request)
-			.then(response => {
-				const body = JSON.parse(response.body);
-				if (Array.isArray(body)) {
-					if (Array.isArray(body?.[0])) {
-						if (body.length === 1) {
-							body[0].pop();
-							text = body[0] ?? `翻译失败, vendor: ${"google"}`;
-						} else text = body?.[0]?.map(item => item?.[0] ?? `翻译失败, vendor: ${"google"}`);
-					} else text = body ?? `翻译失败, vendor: ${"google"}`;
-				} else if (body?.sentences) text = body?.sentences?.map(item => item?.trans ?? `翻译失败, vendor: ${"google"}`);
-				return text?.join("")?.split(/\r/);
-			})
-			.catch(error => Promise.reject(error));
-	}
-
-	async GoogleCloud(text = [], source = this.Source, target = this.Target, api = this.API) {
-		text = Array.isArray(text) ? text : [text];
-		source = this.#LanguagesCode.Google[source] ?? this.#LanguagesCode.Google[source?.split?.(/[-_]/)?.[0]] ?? source.toLowerCase();
-		target = this.#LanguagesCode.Google[target] ?? this.#LanguagesCode.Google[target?.split?.(/[-_]/)?.[0]] ?? target.toLowerCase();
-		const request = {};
-		const BaseURL = "https://translation.googleapis.com";
-		switch (api?.Version) {
-			case "v2":
-			default:
-				request.url = `${BaseURL}/language/translate/v2`;
-				request.headers = {
-					//"Authorization": `Bearer ${api?.Token ?? api?.Auth}`,
-					"User-Agent": "DualSubs",
-					"Content-Type": "application/json; charset=utf-8",
-				};
-				request.body = JSON.stringify({
-					q: text,
-					source: source,
-					target: target,
-					format: "html",
-					//"key": api?.Key
-				});
-				switch (api?.Mode) {
-					case "Token":
-						request.headers.Authorization = `Bearer ${api?.Token ?? api?.Auth}`;
-						break;
-					case "Key":
-					default:
-						request.url += `?key=${api?.Key ?? api?.Auth}`;
-						break;
-				}
-				break;
-			case "v3":
-				request.url = `${BaseURL}/v3/projects/${api?.ID}`;
-				request.headers = {
-					Authorization: `Bearer ${api?.Token ?? api?.Auth}`,
-					"x-goog-user-project": api?.ID,
-					"User-Agent": "DualSubs",
-					"Content-Type": "application/json; charset=utf-8",
-				};
-				request.body = JSON.stringify({
-					sourceLanguageCode: source,
-					targetLanguageCode: target,
-					contents: Array.isArray(text) ? text : [text],
-					mimeType: "text/html",
-				});
-				break;
-		}
-		return await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(request)
-			.then(response => {
-				const body = JSON.parse(response.body);
-				return body?.data?.translations?.map(item => item?.translatedText ?? `翻译失败, vendor: ${"GoogleCloud"}`);
-			})
-			.catch(error => Promise.reject(error));
-	}
-
-	async Microsoft(text = [], source = this.Source, target = this.Target, api = this.API) {
-		text = Array.isArray(text) ? text : [text];
-		source = this.#LanguagesCode.Microsoft[source] ?? this.#LanguagesCode.Microsoft[source?.split?.(/[-_]/)?.[0]] ?? source.toLowerCase();
-		target = this.#LanguagesCode.Microsoft[target] ?? this.#LanguagesCode.Microsoft[target?.split?.(/[-_]/)?.[0]] ?? target.toLowerCase();
-		const request = {};
-		let BaseURL = "https://api.cognitive.microsofttranslator.com";
-		switch (api?.Version) {
-			case "Azure":
-			default:
-				BaseURL = "https://api.cognitive.microsofttranslator.com";
-				break;
-			case "AzureCN":
-				BaseURL = "https://api.translator.azure.cn";
-				break;
-			case "AzureUS":
-				BaseURL = "https://api.cognitive.microsofttranslator.us";
-				break;
-		}
-		request.url = `${BaseURL}/translate?api-version=3.0&textType=html&${source ? `from=${source}` : ""}&to=${target}`;
-		request.headers = {
-			"Content-Type": "application/json; charset=UTF-8",
-			Accept: "application/json, text/javascript, */*; q=0.01",
-			"Accept-Language": "zh-hans",
-			//"Authorization": `Bearer ${api?.Auth}`,
-			//"Ocp-Apim-Subscription-Key": api?.Auth,
-			//"Ocp-Apim-Subscription-Region": api?.Region, // chinanorth, chinaeast2
-			//"X-ClientTraceId": uuidv4().toString()
-		};
-		switch (api?.Mode) {
-			case "Token":
-			default:
-				request.headers.Authorization = `Bearer ${api?.Token ?? api?.Auth}`;
-				break;
-			case "Key":
-				request.headers["Ocp-Apim-Subscription-Key"] = api?.Key ?? api?.Auth;
-				request.headers["Ocp-Apim-Subscription-Region"] = api?.Region;
-				break;
-		}
-		text = text.map(item => {
-			return { text: item };
+			return Line;
 		});
-		request.body = JSON.stringify(text);
-		return await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(request)
-			.then(response => {
-				const body = JSON.parse(response.body);
-				return body?.map(item => item?.translations?.[0]?.text ?? `翻译失败, vendor: ${"Microsoft"}`);
-			})
-			.catch(error => Promise.reject(error));
-	}
+		//console.log(`✅ LRC.toSpotify, lyric: ${JSON.stringify(lyric)}`, "");
+		return lyric;
+	};
 
-	async DeepL(text = [], source = this.Source, target = this.Target, api = this.API) {
-		text = Array.isArray(text) ? text : [text];
-		source = this.#LanguagesCode.DeepL[source] ?? this.#LanguagesCode.DeepL[source?.split?.(/[-_]/)?.[0]] ?? source.toLowerCase();
-		target = this.#LanguagesCode.DeepL[target] ?? this.#LanguagesCode.DeepL[target?.split?.(/[-_]/)?.[0]] ?? target.toLowerCase();
-		const request = {};
-		let BaseURL = "https://api-free.deepl.com";
-		switch (api?.Version) {
-			case "Free":
-			default:
-				BaseURL = "https://api-free.deepl.com";
-				break;
-			case "Pro":
-				BaseURL = "https://api.deepl.com";
-				break;
-		}
-		request.url = `${BaseURL}/v2/translate`;
-		request.headers = {
-			//"Accept": "*/*",
-			"User-Agent": "DualSubs",
-			"Content-Type": "application/json",
-			Authorization: `DeepL-Auth-Key ${api?.Token ?? api?.Auth}`,
-		};
-		const body = {
-			text: text,
-			//"source_lang": source,
-			target_lang: target,
-			tag_handling: "html",
-		};
-		if (source) body.source_lang = source;
-		request.body = JSON.stringify(body);
-		return await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(request)
-			.then(response => {
-				const body = JSON.parse(response.body);
-				return body?.translations?.map(item => item?.text ?? `翻译失败, vendor: ${"DeepL"}`);
-			})
-			.catch(error => Promise.reject(error));
-	}
+	static fromSpotify(lyric = []) {
+		console.log(`☑️ LRC.fromSpotify`, "");
+	};
 
-	async BaiduFanyi(text = [], source = this.Source, target = this.Target, api = this.API) {
-		text = Array.isArray(text) ? text : [text];
-		source = this.#LanguagesCode.Baidu[source] ?? this.#LanguagesCode.Baidu[source?.split?.(/[-_]/)?.[0]] ?? source.toLowerCase();
-		target = this.#LanguagesCode.Baidu[target] ?? this.#LanguagesCode.Baidu[target?.split?.(/[-_]/)?.[0]] ?? target.toLowerCase();
-		const request = {};
-		// https://fanyi-api.baidu.com/doc/24
-		const BaseURL = "https://fanyi-api.baidu.com";
-		request.url = `${BaseURL}/api/trans/vip/language`;
-		request.headers = {
-			"User-Agent": "DualSubs",
-			"Content-Type": "application/x-www-form-urlencoded",
+	static combineSpotify(lyric1 = [], lyric2 = [], options = { tolerance: 1000 }) {
+		console.log(`☑️ LRC.combineSpotify`, "");
+		let index1 = 0, index2 = 0;
+		const length1 = lyric1.length, length2 = lyric2.length;
+		while (index1 < length1 && index2 < length2) {
+			//console.log(`🚧 调试信息, index1/length1: ${index1}/${length1}, index2/length2: ${index2}/${length2}`, "");
+			const timeStamp1 = lyric1[index1].startTimeMs, timeStamp2 = lyric2[index2].startTimeMs;
+			//console.log(`🚧 调试信息, timeStamp1: ${timeStamp1}, timeStamp2: ${timeStamp2}`, "");
+			if (timeStamp1 === timeStamp2) lyric1[index1].twords = lyric2[index2]?.words ?? "";
+			else if (Math.abs(timeStamp1 - timeStamp2) <= options.tolerance) lyric1[index1].twords = lyric2[index2]?.words ?? "";
+			if (timeStamp2 > timeStamp1) index1++
+			else if (timeStamp2 < timeStamp1) index2++
+			else { index1++; index2++ };
 		};
-		const salt = new Date().getTime();
-		request.body = `q=${encodeURIComponent(text.join("\n"))}&from=${source}&to=${target}&appid=${api.id}&salt=${salt}&sign=${crypto_js_md5_js__WEBPACK_IMPORTED_MODULE_1__(api.id + text + salt + api.key)}`;
-		return await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(request)
-			.then(response => {
-				const body = JSON.parse(response.body);
-				return body?.trans_result?.map(item => item?.dst ?? `翻译失败, vendor: ${"BaiduFanyi"}`);
-			})
-			.catch(error => Promise.reject(_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.error(error)));
-	}
+		//console.log(`✅ LRC.combineSpotify, combineLyric: ${JSON.stringify(lyric1)}`, "");
+		return lyric1;
+	};
 
-	async YoudaoAI(text = [], source = this.Source, target = this.Target, api = this.API) {
-		text = Array.isArray(text) ? text : [text];
-		source = this.#LanguagesCode.Youdao[source] ?? this.#LanguagesCode.Youdao[source?.split?.(/[-_]/)?.[0]];
-		target = this.#LanguagesCode.Youdao[target] ?? this.#LanguagesCode.Youdao[target?.split?.(/[-_]/)?.[0]];
-		const request = {};
-		// https://ai.youdao.com/docs
-		// https://ai.youdao.com/DOCSIRMA/html/自然语言翻译/API文档/文本翻译服务/文本翻译服务-API文档.html
-		const BaseURL = "https://openapi.youdao.com";
-		request.url = `${BaseURL}/api`;
-		request.headers = {
-			"User-Agent": "DualSubs",
-			"Content-Type": "application/json; charset=utf-8",
-		};
-		request.body = {
-			q: text,
-			from: source,
-			to: target,
-			appKey: api?.Key,
-			salt: new Date().getTime(),
-			signType: "v3",
-			sign: "",
-			curtime: Math.floor(+new Date() / 1000),
-		};
-		return await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(request)
-			.then(response => {
-				const body = JSON.parse(response.body);
-				return body?.data ?? `翻译失败, vendor: ${"DeepL"}`;
-			})
-			.catch(error => Promise.reject(error));
-	}
-
-	/**
-	 * OpenAI Compatible API Translator
-	 * 支持所有 OpenAI API 兼容的服务，包括：
-	 * - OpenAI
-	 * - Gemini (通过 OpenAI 兼容端点)
-	 * - 本地部署的 LLM (如 Ollama, LMStudio, vLLM 等)
-	 * - 其他 OpenAI 兼容服务
-	 * @author DualSubs Modified
-	 */
-	async OpenAI(text = [], source = this.Source, target = this.Target, api = this.API) {
-		text = Array.isArray(text) ? text : [text];
-		// 语言代码转换为自然语言名称
-		const languageNames = {
-			AUTO: "the same language as the source",
-			ZH: "Chinese", "ZH-HANS": "Simplified Chinese", "ZH-HANT": "Traditional Chinese", "ZH-HK": "Traditional Chinese (Hong Kong)",
-			EN: "English", "EN-US": "American English", "EN-GB": "British English",
-			JA: "Japanese", KO: "Korean", DE: "German", FR: "French", ES: "Spanish",
-			PT: "Portuguese", IT: "Italian", RU: "Russian", AR: "Arabic", TH: "Thai",
-			VI: "Vietnamese", ID: "Indonesian", TR: "Turkish", PL: "Polish", NL: "Dutch",
-			DA: "Danish", FI: "Finnish", SV: "Swedish", NO: "Norwegian", CS: "Czech",
-			HU: "Hungarian", EL: "Greek", RO: "Romanian", SK: "Slovak", UK: "Ukrainian",
-			BG: "Bulgarian", HR: "Croatian", LT: "Lithuanian", SL: "Slovenian", ET: "Estonian", LV: "Latvian",
-		};
-		const targetLang = languageNames[target] ?? languageNames[target?.split?.(/[-_]/)?.[0]] ?? target;
-		const sourceLang = source === "AUTO" ? "" : (languageNames[source] ?? languageNames[source?.split?.(/[-_]/)?.[0]] ?? source);
-		
-		// 构建请求
-		const request = {};
-		const BaseURL = api?.Endpoint?.replace(/\/+$/, "") ?? "https://api.openai.com";
-		request.url = `${BaseURL}/v1/chat/completions`;
-		request.headers = {
-			"Content-Type": "application/json",
-			"User-Agent": "DualSubs",
-		};
-		// 添加认证头
-		if (api?.Auth) {
-			request.headers["Authorization"] = `Bearer ${api.Auth}`;
-		}
-		
-		// 构建翻译提示
-		const systemPrompt = `You are a professional subtitle translator. Translate the following subtitles to ${targetLang}. 
-Rules:
-1. Keep the translation natural and fluent
-2. Maintain the original meaning and tone
-3. Each line should be translated separately, preserving line breaks
-4. Output ONLY the translated text, no explanations or notes
-5. Do not add any numbering or formatting
-${sourceLang ? `6. The source language is ${sourceLang}` : ""}`;
-
-		const userContent = text.join("\n");
-		
-		request.body = JSON.stringify({
-			model: api?.Model ?? "gpt-3.5-turbo",
-			messages: [
-				{ role: "system", content: systemPrompt },
-				{ role: "user", content: userContent }
-			],
-			temperature: 0.3,
-			max_tokens: 4096,
-		});
-		
-		return await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(request)
-			.then(response => {
-				const body = JSON.parse(response.body);
-				if (body?.error) {
-					_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.error(`OpenAI API Error: ${body.error.message}`);
-					return text.map(() => `翻译失败: ${body.error.message}`);
-				}
-				const translatedText = body?.choices?.[0]?.message?.content?.trim();
-				if (!translatedText) {
-					return text.map(() => `翻译失败, vendor: OpenAI`);
-				}
-				// 按行分割翻译结果
-				const translatedLines = translatedText.split(/\n/);
-				// 确保返回的行数与输入相同
-				if (translatedLines.length === text.length) {
-					return translatedLines;
-				} else if (translatedLines.length > text.length) {
-					// 如果返回行数多，截取
-					return translatedLines.slice(0, text.length);
-				} else {
-					// 如果返回行数少，用原文补齐
-					return text.map((original, i) => translatedLines[i] ?? original);
-				}
-			})
-			.catch(error => {
-				_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.error(`OpenAI Translation Error: ${error}`);
-				return Promise.reject(error);
-			});
-	}
+	static separateSpotify(lyric = []) {
+		console.log(`☑️ LRC.separateSpotify`, "");
+		let separateLyric = lyric.map(line => {
+			let line1 = {
+				"startTimeMs": line.startTimeMs.toString(),
+				"words": line?.words ?? "",
+				"syllables": line?.syllables ?? [],
+				"endTimeMs": "0"
+			};
+			let line2 = {
+				"startTimeMs": line.startTimeMs.toString(),
+				"words": line?.twords ?? "",
+				"syllables": [],
+				"endTimeMs": "0"
+			};
+			return [line1, line2];
+		}).flat(Infinity);
+		//console.log(`✅ LRC.separateSpotify, separateLyric: ${JSON.stringify(separateLyric)}`, "");
+		return separateLyric;
+	};
 }
 
 
@@ -7327,7 +4853,6 @@ ${sourceLang ? `6. The source language is ${sourceLang}` : ""}`;
   !*** ./src/function/database.mjs ***!
   \***********************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 });
@@ -7841,104 +5366,11 @@ __webpack_require__.d(__webpack_exports__, {
 
 
 }),
-"./src/function/detectFormat.mjs": 
-/*!***************************************!*\
-  !*** ./src/function/detectFormat.mjs ***!
-  \***************************************/
-(function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (detectFormat)
-});
-/* ESM import */var _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @nsnanocat/util */ "./node_modules/@nsnanocat/util/index.js");
-
-
-/**
- * detect Format
- * @author VirgilClyne
- * @param {Object} url - Parsed URL
- * @param {String} body - response body
- * @return {String} format - format
- */
-function detectFormat(url, body, format = undefined) {
-	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.log("☑️ detectFormat", `format: ${url.format || url.searchParams.get("fmt") || url.searchParams.get("format")}`);
-	switch (url.format || url.searchParams.get("fmt") || url.searchParams.get("format")) {
-		case "txt":
-			format = "text/plain";
-			break;
-		case "xml":
-		case "srv3":
-		case "ttml":
-		case "ttml2":
-		case "imsc":
-			format = "text/xml";
-			break;
-		case "vtt":
-		case "webvtt":
-			format = "text/vtt";
-			break;
-		case "json":
-		case "json3":
-			format = "application/json";
-			break;
-		case "m3u":
-		case "m3u8":
-			format = "application/x-mpegurl";
-			break;
-		case "plist":
-			format = "application/plist";
-			break;
-		case undefined:
-			const HEADER = body?.substring?.(0, 6).trim?.();
-			//Console.debug(`HEADER: ${HEADER}`);
-			//Console.debug(`HEADER?.substring?.(0, 1): ${HEADER?.substring?.(0, 1)}`);
-			switch (HEADER) {
-				case "<?xml":
-					format = "text/xml";
-					break;
-				case "WEBVTT":
-					format = "text/vtt";
-					break;
-				default:
-					switch (HEADER?.substring?.(0, 1)) {
-						case "0":
-						case "1":
-						case "2":
-						case "3":
-						case "4":
-						case "5":
-						case "6":
-						case "7":
-						case "8":
-						case "9":
-							format = "text/vtt";
-							break;
-						case "{":
-							format = "application/json";
-							break;
-						default:
-							format = format;
-							break;
-					}
-					break;
-				case undefined:
-					format = undefined;
-					break;
-			}
-			break;
-	}
-	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.log("✅ detectFormat", `format: ${format}`);
-	return format;
-}
-
-
-}),
 "./src/function/detectPlatform.mjs": 
 /*!*****************************************!*\
   !*** ./src/function/detectPlatform.mjs ***!
   \*****************************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   "default": () => (detectPlatform)
 });
@@ -8018,8 +5450,10 @@ function detectPlatform(url) {
 /*!***********************************!*\
   !*** ./src/function/setCache.mjs ***!
   \***********************************/
-(function (__unused_webpack___webpack_module__, __unused_webpack___webpack_exports__, __webpack_require__) {
-"use strict";
+(function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (setCache)
+});
 /* ESM import */var _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @nsnanocat/util */ "./node_modules/@nsnanocat/util/index.js");
 
 
@@ -8045,7 +5479,6 @@ function setCache(cache, cacheSize = 100) {
   !*** ./src/function/setENV.mjs ***!
   \*********************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   "default": () => (setENV)
 });
@@ -8085,11 +5518,7 @@ function setENV(name, platforms, database) {
 /*!****************************************************************************!*\
   !*** ./src/protobuf/google/protos/youtube/api/innertube/BrowseResponse.js ***!
   \****************************************************************************/
-(function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.d(__webpack_exports__, {
-  BrowseResponse: () => (BrowseResponse)
-});
+(function (__unused_webpack___webpack_module__, __unused_webpack___webpack_exports__, __webpack_require__) {
 /* ESM import */var _protobuf_ts_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @protobuf-ts/runtime */ "./node_modules/@protobuf-ts/runtime/build/es2015/message-type.js");
 /* ESM import */var _protobuf_ts_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @protobuf-ts/runtime */ "./node_modules/@protobuf-ts/runtime/build/es2015/reflection-info.js");
 
@@ -8242,7 +5671,6 @@ const BrowseResponse = new BrowseResponse$Type();
   !*** ./src/protobuf/spotify/lyrics/Lyrics.js ***!
   \***********************************************/
 (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-"use strict";
 __webpack_require__.d(__webpack_exports__, {
   ColorLyricsResponse: () => (ColorLyricsResponse)
 });
@@ -8369,7 +5797,7 @@ var module = (__webpack_module_cache__[moduleId] = {
 exports: {}
 });
 // Execute the module function
-__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 
 // Return the exports of the module
 return module.exports;
@@ -8387,49 +5815,26 @@ __webpack_require__.d = (exports, definition) => {
     }
 };
 })();
-// webpack/runtime/global
-(() => {
-__webpack_require__.g = (() => {
-	if (typeof globalThis === 'object') return globalThis;
-	try {
-		return this || new Function('return this')();
-	} catch (e) {
-		if (typeof window === 'object') return window;
-	}
-})();
-})();
 // webpack/runtime/has_own_property
 (() => {
 __webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 })();
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 
-/*!***************************************!*\
-  !*** ./src/Translate.response.dev.js ***!
-  \***************************************/
+/*!*********************************************!*\
+  !*** ./src/External.Lyrics.response.dev.js ***!
+  \*********************************************/
 /* ESM import */var _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @nsnanocat/util */ "./node_modules/@nsnanocat/util/index.js");
-/* ESM import */var _nsnanocat_url__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @nsnanocat/url */ "./node_modules/@nsnanocat/url/URL.mjs");
-/* ESM import */var _XML_XML_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./XML/XML.mjs */ "./src/XML/XML.mjs");
-/* ESM import */var _WebVTT_WebVTT_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./WebVTT/WebVTT.mjs */ "./src/WebVTT/WebVTT.mjs");
-/* ESM import */var _function_database_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./function/database.mjs */ "./src/function/database.mjs");
-/* ESM import */var _function_setENV_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./function/setENV.mjs */ "./src/function/setENV.mjs");
-/* ESM import */var _function_detectFormat_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./function/detectFormat.mjs */ "./src/function/detectFormat.mjs");
-/* ESM import */var _function_detectPlatform_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./function/detectPlatform.mjs */ "./src/function/detectPlatform.mjs");
-/* ESM import */var _function_setCache_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./function/setCache.mjs */ "./src/function/setCache.mjs");
-/* ESM import */var _class_Translate_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./class/Translate.mjs */ "./src/class/Translate.mjs");
-/* ESM import */var _protobuf_google_protos_youtube_api_innertube_BrowseResponse_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./protobuf/google/protos/youtube/api/innertube/BrowseResponse.js */ "./src/protobuf/google/protos/youtube/api/innertube/BrowseResponse.js");
-/* ESM import */var _protobuf_spotify_lyrics_Lyrics_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./protobuf/spotify/lyrics/Lyrics.js */ "./src/protobuf/spotify/lyrics/Lyrics.js");
-/* ESM import */var _protobuf_ts_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @protobuf-ts/runtime */ "./node_modules/@protobuf-ts/runtime/build/es2015/binary-format-contract.js");
-/* ESM import */var _protobuf_ts_runtime__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @protobuf-ts/runtime */ "./node_modules/@protobuf-ts/runtime/build/es2015/binary-reader.js");
-
-
-
-
-
+/* ESM import */var _LRC_LRC_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LRC/LRC.mjs */ "./src/LRC/LRC.mjs");
+/* ESM import */var _function_database_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./function/database.mjs */ "./src/function/database.mjs");
+/* ESM import */var _function_setENV_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./function/setENV.mjs */ "./src/function/setENV.mjs");
+/* ESM import */var _function_detectPlatform_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./function/detectPlatform.mjs */ "./src/function/detectPlatform.mjs");
+/* ESM import */var _function_setCache_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./function/setCache.mjs */ "./src/function/setCache.mjs");
+/* ESM import */var _protobuf_google_protos_youtube_api_innertube_BrowseResponse_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./protobuf/google/protos/youtube/api/innertube/BrowseResponse.js */ "./src/protobuf/google/protos/youtube/api/innertube/BrowseResponse.js");
+/* ESM import */var _protobuf_spotify_lyrics_Lyrics_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./protobuf/spotify/lyrics/Lyrics.js */ "./src/protobuf/spotify/lyrics/Lyrics.js");
 
 
 
@@ -8440,29 +5845,33 @@ var __webpack_exports__ = {};
 
 /***************** Processing *****************/
 // 解构URL
-const url = new _nsnanocat_url__WEBPACK_IMPORTED_MODULE_1__.URL($request.url);
+const url = new URL($request.url);
 _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.info(`url: ${url.toJSON()}`);
 // 获取连接参数
 const PATHs = url.pathname.split("/").filter(Boolean);
 _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.info(`PATHs: ${PATHs}`);
 // 解析格式
-let FORMAT = ($response.headers?.["Content-Type"] ?? $response.headers?.["content-type"])?.split(";")?.[0];
-if (FORMAT === "application/octet-stream" || FORMAT === "text/plain") FORMAT = (0,_function_detectFormat_mjs__WEBPACK_IMPORTED_MODULE_6__["default"])(url, $response?.body, FORMAT);
+const FORMAT = ($response.headers?.["Content-Type"] ?? $response.headers?.["content-type"] ?? $request.headers?.Accept ?? $request.headers?.accept)?.split(";")?.[0];
 _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.info(`FORMAT: ${FORMAT}`);
 (async () => {
 	// 获取平台
-	const PLATFORM = (0,_function_detectPlatform_mjs__WEBPACK_IMPORTED_MODULE_7__["default"])($request.url);
+	const PLATFORM = (0,_function_detectPlatform_mjs__WEBPACK_IMPORTED_MODULE_4__["default"])($request.url);
 	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.info(`PLATFORM: ${PLATFORM}`);
 	/**
 	 * 设置
 	 * @type {{Settings: import('./types').Settings}}
 	 */
-	const { Settings, Caches, Configs } = (0,_function_setENV_mjs__WEBPACK_IMPORTED_MODULE_5__["default"])("DualSubs", [["YouTube", "Netflix", "BiliBili", "Spotify"].includes(PLATFORM) ? PLATFORM : "Universal", "Translate", "API"], _function_database_mjs__WEBPACK_IMPORTED_MODULE_4__["default"]);
+	const { Settings, Caches, Configs } = (0,_function_setENV_mjs__WEBPACK_IMPORTED_MODULE_3__["default"])("DualSubs", [["YouTube", "Netflix", "BiliBili", "Spotify"].includes(PLATFORM) ? PLATFORM : "Universal", "External", "API"], _function_database_mjs__WEBPACK_IMPORTED_MODULE_2__["default"]);
 	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.logLevel = Settings.LogLevel;
 	// 获取字幕类型与语言
 	const Type = url.searchParams?.get("subtype") ?? Settings.Type,
 		Languages = [url.searchParams?.get("lang")?.toUpperCase?.() ?? Settings.Languages[0], (url.searchParams?.get("tlang") ?? Caches?.tlang)?.toUpperCase?.() ?? Settings.Languages[1]];
 	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.info(`Type: ${Type}`, `Languages: ${Languages}`);
+	// 查询缓存
+	const trackId = PATHs?.[3];
+	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`trackId: ${trackId}`);
+	const trackInfo = Caches.Metadatas.Tracks.get(trackId);
+	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`trackInfo: ${JSON.stringify(trackInfo)}`);
 	// 创建空数据
 	let body = {};
 	// 格式判断
@@ -8486,155 +5895,33 @@ _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.info(`FORMAT: ${FORMAT}`);
 		case "text/plist":
 		case "application/xml":
 		case "application/plist":
-		case "application/x-plist": {
-			body = _XML_XML_mjs__WEBPACK_IMPORTED_MODULE_2__["default"].parse($response.body);
+		case "application/x-plist":
+			//body = XML.parse($response.body);
 			//Console.debug(`body: ${JSON.stringify(body)}`);
-			const breakLine = body?.tt ? "<br />" : body?.timedtext ? "&#x000A;" : "&#x000A;";
-			if (body?.timedtext?.head?.wp?.[1]?.["@rc"]) body.timedtext.head.wp[1]["@rc"] = "1";
-			let paragraph = body?.tt?.body?.div?.p ?? body?.timedtext?.body?.p;
-			const fullText = [];
-			paragraph = paragraph.map(para => {
-				if (para?.s) {
-					if (Array.isArray(para.s)) para["#"] = para.s.map(seg => seg["#"]).join(" ");
-					else para["#"] = para.s?.["#"] ?? "";
-					// biome-ignore lint/performance/noDelete: <explanation>
-					delete para.s;
-				}
-				const span = para?.span ?? para;
-				const sentences = Array.isArray(span) ? span?.map(span => span?.["#"] ?? "\u200b").join(breakLine) : span?.["#"];
-				fullText.push(sentences ?? "\u200b");
-				/*
-				const spans = para?.span ?? para?.s ?? para;
-				if (Array.isArray(span)) spans["#"] = spans?.map(span => span?.["#"] ?? "").join(" ");
-				else spans["#"] = spans?.["#"] ?? "";
-				if (para?.s) para = spans;
-				if (spans?.["#"]) fullText.push(spans["#"]);
-				*/
-				return para;
-			});
-			const translation = await Translator(Settings.Vendor, Settings.Method, fullText, Languages, Settings?.[Settings?.Vendor], Settings?.Times, Settings?.Interval, Settings?.Exponential);
-			paragraph = paragraph.map((para, i) => {
-				const span = para?.span ?? para;
-				if (Array.isArray(span))
-					translation?.[i]?.split(breakLine).forEach((text, j) => {
-						if (span[j]?.["#"]) span[j]["#"] = combineText(span[j]["#"], text, Settings?.ShowOnly, Settings?.Position, " ");
-						//else if (span[j + 1]?.["#"]) span[j + 1]["#"] = combineText(span[j + 1]["#"], text, Settings?.ShowOnly, Settings?.Position, ' ');
-					});
-				else if (span?.["#"]) span["#"] = combineText(span["#"], translation?.[i], Settings?.ShowOnly, Settings?.Position, breakLine);
-				return para;
-			});
-			//Console.debug(`body: ${JSON.stringify(body)}`);
-			$response.body = _XML_XML_mjs__WEBPACK_IMPORTED_MODULE_2__["default"].stringify(body);
+			//$response.body = XML.stringify(body);
 			break;
-		}
 		case "text/vtt":
-		case "application/vtt": {
-			body = _WebVTT_WebVTT_mjs__WEBPACK_IMPORTED_MODULE_3__["default"].parse($response.body);
+		case "application/vtt":
+			//body = VTT.parse($response.body);
 			//Console.debug(`body: ${JSON.stringify(body)}`);
-			const fullText = body?.body.map(item => (item?.text ?? "\u200b")?.replace(/<\/?[^<>]+>/g, ""));
-			const translation = await Translator(Settings.Vendor, Settings.Method, fullText, Languages, Settings?.[Settings?.Vendor], Settings?.Times, Settings?.Interval, Settings?.Exponential);
-			body.body = body.body.map((item, i) => {
-				item.text = combineText(item?.text ?? "\u200b", translation?.[i], Settings?.ShowOnly, Settings?.Position);
-				return item;
-			});
-			//Console.debug(`body: ${JSON.stringify(body)}`);
-			$response.body = _WebVTT_WebVTT_mjs__WEBPACK_IMPORTED_MODULE_3__["default"].stringify(body);
+			//$response.body = VTT.stringify(body);
 			break;
-		}
 		case "text/json":
-		case "application/json": {
+		case "application/json":
 			body = JSON.parse($response.body ?? "{}");
 			//Console.debug(`body: ${JSON.stringify(body)}`);
 			switch (PLATFORM) {
-				case "YouTube": {
-					if (body?.events) {
-						const fullText = [];
-						body.events = body.events.map(event => {
-							if (event?.segs?.[0]?.utf8) event.segs = [{ utf8: event.segs.map(seg => seg.utf8).join("") }];
-							fullText.push(event?.segs?.[0]?.utf8 ?? "\u200b");
-							event.wWinId = undefined;
-							return event;
-						});
-						const translation = await Translator(Settings.Vendor, Settings.Method, fullText, Languages, Settings?.[Settings?.Vendor], Settings?.Times, Settings?.Interval, Settings?.Exponential);
-						body.events = body.events.map((event, i) => {
-							if (event?.segs?.[0]?.utf8) event.segs[0].utf8 = combineText(event.segs[0].utf8, translation?.[i], Settings?.ShowOnly, Settings?.Position);
-							return event;
-						});
-					} else if (body?.contents?.sectionListRenderer?.contents) {
-						let musicDescriptions = body.contents.sectionListRenderer.contents;
-						musicDescriptions = await Promise.all(
-							musicDescriptions.map(async musicDescription => {
-								if (musicDescription?.musicDescriptionShelfRenderer?.description?.runs) {
-									let lyrics = musicDescription.musicDescriptionShelfRenderer.description.runs;
-									lyrics = await Promise.all(
-										lyrics.map(async run => {
-											let fullText = run?.text?.split?.("\n")?.map(text => text?.trim() ?? "\u200b");
-											const translation = await Translator(Settings.Vendor, Settings.Method, fullText, Languages, Settings?.[Settings?.Vendor], Settings?.Times, Settings?.Interval, Settings?.Exponential);
-											fullText = fullText.map((line, i) => {
-												if (line) return combineText(line, translation?.[i], Settings?.ShowOnly, Settings?.Position, "\n  └ ");
-											});
-											run.text = fullText.join("\n");
-											return run;
-										}),
-									);
-								}
-								return musicDescription;
-							}),
-						);
-					}
+				case "YouTube":
 					break;
-				}
-				case "Spotify": {
-					Languages[0] = body?.lyrics?.language === "z1" ? "ZH-HANT" : body?.lyrics?.language ? body?.lyrics?.language.toUpperCase() : "AUTO";
-					const fullText = body.lyrics.lines.map(line => line?.words ?? "\u200b");
-					const translation = await Translator(Settings.Vendor, Settings.Method, fullText, Languages, Settings?.[Settings?.Vendor], Settings?.Times, Settings?.Interval, Settings?.Exponential);
-					_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`$request.headers["app-platform"]: ${$request?.headers?.["app-platform"]}`);
-					switch ($request?.headers?.["app-platform"] ?? $request?.headers?.["App-Platform"]) {
-						case "OSX": // macOS App 暂不支持翻译功能
-						case "Win32_x86_64": // Windows App 暂不支持翻译功能
-						case "WebPlayer": // Web App
-						case undefined:
-						// biome-ignore lint/suspicious/noFallthroughSwitchClause: <explanation>
-						default:
-							/*
-							body.lyrics.lines = body.lyrics.lines.map((line, i) => {
-								if (line?.words) line.words = combineText(line.words, translation?.[i], Settings?.ShowOnly, Settings?.Position);
-								return line;
-							});
-							*/
-							body.lyrics.lines = body.lyrics.lines
-								.map((line, i) => {
-									const line1 = {
-										startTimeMs: line.startTimeMs.toString(),
-										words: line?.words ?? "",
-										syllables: line?.syllables ?? [],
-										endTimeMs: "0",
-									};
-									const line2 = {
-										startTimeMs: line.startTimeMs.toString(),
-										words: translation?.[i] ?? "",
-										syllables: [],
-										endTimeMs: "0",
-									};
-									return [line1, line2];
-								})
-								.flat(Number.POSITIVE_INFINITY);
-						//break; 不中断，继续处理
-						case "iOS":
-							if (!body?.lyrics?.alternatives) body.lyrics.alternatives = [];
-							body.lyrics.alternatives.unshift({
-								language: Languages[1].toLowerCase(),
-								lines: translation,
-							});
-							break;
-					}
+				case "Spotify":
+					body = await injectionLyric(Settings.LrcVendor, trackInfo, body, PLATFORM);
+					if (!$response?.headers?.["Content-Type"] && $response?.headers?.["content-type"]) $response.headers["Content-Type"] = FORMAT;
+					$response.status = _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.$app === "Quantumult X" ? "HTTP/1.1 200 OK" : 200;
 					break;
-				}
 			}
 			//Console.debug(`body: ${JSON.stringify(body)}`);
 			$response.body = JSON.stringify(body);
 			break;
-		}
 		case "application/protobuf":
 		case "application/x-protobuf":
 		case "application/vnd.google.protobuf":
@@ -8650,64 +5937,14 @@ _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.info(`FORMAT: ${FORMAT}`);
 				case "application/vnd.google.protobuf":
 					switch (PLATFORM) {
 						case "YouTube": {
-							body = _protobuf_google_protos_youtube_api_innertube_BrowseResponse_js__WEBPACK_IMPORTED_MODULE_10__.BrowseResponse.fromBinary(rawBody);
-							//Console.debug(`body: ${JSON.stringify(body)}`);
-							_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`contents: ${JSON.stringify(body?.contents)}`);
-							_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`continuationContents: ${JSON.stringify(body?.continuationContents)}`);
-							let UF = _protobuf_ts_runtime__WEBPACK_IMPORTED_MODULE_12__.UnknownFieldHandler.list(body);
-							//Console.debug(`UF: ${JSON.stringify(UF)}`);
-							if (UF) {
-								UF = UF.map(uf => {
-									//uf.no; // 22
-									//uf.wireType; // WireType.Varint
-									// use the binary reader to decode the raw data:
-									const reader = new _protobuf_ts_runtime__WEBPACK_IMPORTED_MODULE_13__.BinaryReader(uf.data);
-									const addedNumber = reader.int32(); // 7777
-									_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`no: ${uf.no}, wireType: ${uf.wireType}, reader: ${reader}, addedNumber: ${addedNumber}`);
-								});
-							}
-							Languages[0] = "AUTO";
-							if (body?.contents?.renderer?.elementRenderer?.n7F172660663?.n8F1?.n9F168777401?.n10F5?.n11F465160965?.n12F4?.n13F1) {
-								const fullText = body.contents.renderer.elementRenderer.n7F172660663.n8F1.n9F168777401.n10F5.n11F465160965.n12F4.n13F1.map(line => line?.f1 ?? "\u200b");
-								const translation = await Translator(Settings.Vendor, Settings.Method, fullText, Languages, Settings?.[Settings?.Vendor], Settings?.Times, Settings?.Interval, Settings?.Exponential);
-								body.contents.renderer.elementRenderer.n7F172660663.n8F1.n9F168777401.n10F5.n11F465160965.n12F4.n13F1 = body.contents.renderer.elementRenderer.n7F172660663.n8F1.n9F168777401.n10F5.n11F465160965.n12F4.n13F1.map((line, i) => {
-									if (line?.f1) line.f1 = combineText(line.f1, translation?.[i], Settings?.ShowOnly, Settings?.Position);
-									return line;
-								});
-							} else if (body?.contents?.renderer?.sectionListRenderer?.contents) {
-								let musicDescriptions = body.contents.renderer.sectionListRenderer.contents;
-								musicDescriptions = await Promise.all(
-									musicDescriptions.map(async musicDescription => {
-										if (musicDescription?.musicDescriptionShelfRenderer?.description?.runs) {
-											let lyrics = musicDescription.musicDescriptionShelfRenderer.description.runs;
-											lyrics = await Promise.all(
-												lyrics.map(async run => {
-													let fullText = run?.text?.split?.("\n")?.map(text => text?.trim() ?? "\u200b");
-													const translation = await Translator(Settings.Vendor, Settings.Method, fullText, Languages, Settings?.[Settings?.Vendor], Settings?.Times, Settings?.Interval, Settings?.Exponential);
-													fullText = fullText.map((line, i) => {
-														if (line) return combineText(line, translation?.[i], Settings?.ShowOnly, Settings?.Position, "\n  └ ");
-													});
-													run.text = fullText.join("\n");
-													return run;
-												}),
-											);
-										}
-										return musicDescription;
-									}),
-								);
-							}
-							//Console.debug(`body: ${JSON.stringify(body)}`);
-							_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`contents: ${JSON.stringify(body?.contents)}`);
-							_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`continuationContents: ${JSON.stringify(body?.continuationContents)}`);
-							rawBody = _protobuf_google_protos_youtube_api_innertube_BrowseResponse_js__WEBPACK_IMPORTED_MODULE_10__.BrowseResponse.toBinary(body);
 							break;
 						}
 						case "Spotify": {
-							body = _protobuf_spotify_lyrics_Lyrics_js__WEBPACK_IMPORTED_MODULE_11__.ColorLyricsResponse.fromBinary(rawBody);
+							body = _protobuf_spotify_lyrics_Lyrics_js__WEBPACK_IMPORTED_MODULE_7__.ColorLyricsResponse.fromBinary(rawBody);
 							_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`body: ${JSON.stringify(body)}`);
 							/*
 							let UF = UnknownFieldHandler.list(body);
-							//Console.debug(`UF: ${JSON.stringify(UF)}`);
+							Console.debug(`UF: ${JSON.stringify(UF)}`);
 							if (UF) {
 								UF = UF.map(uf => {
 									//uf.no; // 22
@@ -8719,22 +5956,24 @@ _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.info(`FORMAT: ${FORMAT}`);
 								});
 							};
 							*/
-							Languages[0] = body?.lyrics?.language === "z1" ? "ZH-HANT" : body?.lyrics?.language ? body?.lyrics?.language.toUpperCase() : "AUTO";
-							const fullText = body.lyrics.lines.map(line => line?.words ?? "\u200b");
-							const translation = await Translator(Settings.Vendor, Settings.Method, fullText, Languages, Settings?.[Settings?.Vendor], Settings?.Times, Settings?.Interval, Settings?.Exponential);
-							/*
-							body.lyrics.alternatives = [{
-								"language": Languages[1].toLowerCase(),
-								"lines": translation
-							}];
-							*/
-							if (!body?.lyrics?.alternatives) body.lyrics.alternatives = [];
-							body.lyrics.alternatives.unshift({
-								language: Languages[1].toLowerCase(),
-								lines: translation,
-							});
+							body = await injectionLyric(Settings.LrcVendor, trackInfo, body, PLATFORM);
+							//body.lyrics = await injectionLyric(Settings.LrcVendor, trackInfo, body, PLATFORM).then(body => body.lyrics);
+							switch (body?.lyrics?.syncType) {
+								case "UNSYNCED":
+									body.lyrics.syncType = 0;
+									break;
+								case "LINE_SYNCED":
+									body.lyrics.syncType = 1;
+									break;
+								case "SYLLABLE_SYNCED":
+									body.lyrics.syncType = 2;
+									break;
+							}
+							body.lyrics.fullscreenAction = 0;
+							if (!$response?.headers?.["Content-Type"] && $response?.headers?.["content-type"]) $response.headers["Content-Type"] = FORMAT;
+							$response.status = _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.$app === "Quantumult X" ? "HTTP/1.1 200 OK" : 200;
 							_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`body: ${JSON.stringify(body)}`);
-							rawBody = _protobuf_spotify_lyrics_Lyrics_js__WEBPACK_IMPORTED_MODULE_11__.ColorLyricsResponse.toBinary(body);
+							rawBody = _protobuf_spotify_lyrics_Lyrics_js__WEBPACK_IMPORTED_MODULE_7__.ColorLyricsResponse.toBinary(body);
 							break;
 						}
 					}
@@ -8744,71 +5983,362 @@ _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.info(`FORMAT: ${FORMAT}`);
 					break;
 			}
 			// 写入二进制数据
+			//Console.debug(`rawBody: ${JSON.stringify(rawBody)}`);
 			$response.body = rawBody;
 			break;
 		}
+	}
+	// 缓存查询信息
+	if (trackInfo?.NeteaseMusic?.id ?? trackInfo?.QQMusic?.mid) {
+		Caches.Metadatas.Tracks.set(trackInfo.id, trackInfo);
+		// 格式化缓存
+		_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`Caches.Metadatas.Tracks: ${JSON.stringify([...Caches.Metadatas.Tracks.entries()])}`);
+		Caches.Metadatas.Tracks = (0,_function_setCache_mjs__WEBPACK_IMPORTED_MODULE_5__["default"])(Caches.Metadatas.Tracks, Settings.CacheSize);
+		// 写入持久化储存
+		_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Storage.setItem(`@DualSubs.${PLATFORM}.Caches.Metadatas.Tracks`, Caches.Metadatas.Tracks);
 	}
 })()
 	.catch(e => _nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.error(e))
 	.finally(() => (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.done)($response));
 
 /***************** Function *****************/
-/**
- * Translator
- * @author VirgilClyne
- * @param {Array} text - full text
- * @param {String} method - method
- * @param {String} vendor - translate service vendor
- * @param {String} source - source language
- * @param {String} target - target language
- * @param {Object} api - translate service API
- * @param {Object} database - languages database
- * @param {Number} times - retry times
- * @param {Number} interval - retry interval
- * @param {Boolean} exponential - retry Exponential
- *
- * @return {Promise<*>}
- */
-async function Translator(vendor = "OpenAI", method = "Part", text = [], [source = "AUTO", target = "ZH"], API = {}, times = 3, interval = 100, exponential = true) {
-	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.log("☑️ Translator", `vendor: ${vendor}`, `method: ${method}`, `[source, target]: ${[source, target]}`);
-	// 翻译长度设置
-	let length = 127;
+async function injectionLyric(vendor = "NeteaseMusic", trackInfo = {}, body = $response.body, platform) {
+	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.log("☑️ Injection Lyric", `vendor: ${vendor}`, `trackInfo: ${JSON.stringify(trackInfo)}`);
+	const UAPool = [
+		"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36", // 13.5%
+		"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36", // 6.6%
+		"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0", // 6.4%
+		"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0", // 6.2%
+		"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36", // 5.2%
+		"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36", // 4.8%
+		"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
+		"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134",
+		"Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+		"Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1",
+		"Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+		"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0",
+	];
+	// 外部歌词
+	let externalLyric = undefined;
+	let transLyric = undefined;
+	let duolyric = undefined;
+	// 构建歌词结构
+	if (!body) body = {};
+	// 查询&提取
 	switch (vendor) {
-		case "Google":
-		case "GoogleCloud":
+		case "NeteaseMusic":
+		case "NeteaseMusicNodeJS":
 		default:
-			length = 120;
+			if (!trackInfo?.NeteaseMusic?.id) trackInfo.NeteaseMusic = await searchTrack(vendor, `${trackInfo.track} ${trackInfo.artist}`, UAPool);
+			if (trackInfo?.NeteaseMusic?.id) externalLyric = await searchLyric(vendor, trackInfo.NeteaseMusic.id, UAPool);
 			break;
-		case "Microsoft":
-		case "Azure":
-			length = 99;
-			break;
-		case "DeepL":
-			length = 49;
-			break;
-		case "DeepLX":
-			length = 20;
-			break;
-		case "OpenAI":
-			length = 50; // OpenAI/Gemini 可以处理更长的文本，但为了稳定性设置为50
+		case "QQMusic":
+			if (!trackInfo?.QQMusic?.mid) trackInfo.QQMusic = await searchTrack(vendor, `${trackInfo.track} ${trackInfo.artist}`, UAPool);
+			if (trackInfo?.QQMusic?.mid) externalLyric = await searchLyric(vendor, trackInfo.QQMusic.mid, UAPool);
 			break;
 	}
-	let Translation = [];
-	switch (method) {
-		default:
-		case "Part": {
-			// Part 逐段翻译
-			const parts = chunk(text, length);
-			Translation = await Promise.all(parts.map(async part => await retry(() => new _class_Translate_mjs__WEBPACK_IMPORTED_MODULE_9__["default"]({ Source: source, Target: target, API: API })[vendor](part), times, interval, exponential))).then(part => part.flat(Number.POSITIVE_INFINITY));
+	// 按平台填充歌词
+	switch (platform) {
+		case "Spotify":
+			// 初始化面板信息
+			body.lyrics = {
+				syncType: "UNSYNCED",
+				//"syncType": 1,
+				lines: [
+					{
+						startTimeMs: "0",
+						words: "",
+						syllables: [],
+						endTimeMs: "0",
+					},
+				],
+				provider: "",
+				providerLyricsId: "",
+				providerDisplayName: "",
+				syncLyricsUri: "",
+				isDenseTypeface: true,
+				alternatives: [],
+				language: "",
+				//"isRtlLanguage": false,
+				//"fullscreenAction": "FULLSCREEN_LYRICS",
+				//"showUpsell": false,
+				//"capStatus": "NONE",
+				//"impressionsRemaining": 0
+			};
+			body.colors = {
+				background: -8421504, // 灰色
+				text: -16777216, // 黑色
+				highlightText: -1, // 白色
+			};
+			body.hasVocalRemoval = false;
+			// 填充面板信息
+			switch (vendor) {
+				case "NeteaseMusicNodeJS":
+				case "NeteaseMusic":
+					body.lyrics.provider = "NeteaseMusic";
+					body.lyrics.providerLyricsId = trackInfo?.NeteaseMusic?.id?.toString?.();
+					body.lyrics.providerDisplayName = `网易云音乐 - ${externalLyric?.lyricUser ?? "未知"}`;
+					body.colors.background = -8249806; // 网易红 8527410 #821E32 rgb(130,30,50)
+					//body.colors.background = -55775; // 网易红 16721441 #FF2621 rgb(255,38,33)
+					_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`body.lyrics.lines: ${JSON.stringify(body.lyrics.lines)}`);
+					break;
+				case "QQMusic":
+				default:
+					body.lyrics.provider = "QQMusic";
+					body.lyrics.providerLyricsId = trackInfo?.QQMusic?.mid?.toString?.();
+					body.lyrics.providerDisplayName = `QQ音乐 - ${externalLyric?.lyricUser ?? "未知"}`;
+					body.colors.background = -11038189; // QQ音乐绿 5739027 #579213 rgb(87,146,19)
+					_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`body.lyrics.lines: ${JSON.stringify(body.lyrics.lines)}`);
+					break;
+			}
+			// 填充逐字或逐句歌词
+			if (externalLyric?.klyric) {
+				body.lyrics.syncType = "SYLLABLE_SYNCED";
+				body.lyrics.lines = _LRC_LRC_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].toSpotify(externalLyric.klyric);
+			} else if (externalLyric?.lyric) {
+				body.lyrics.syncType = "LINE_SYNCED";
+				body.lyrics.lines = _LRC_LRC_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].toSpotify(externalLyric.lyric);
+			}
+			// 填充翻译歌词
+			if (externalLyric?.tlyric) {
+				transLyric = _LRC_LRC_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].toSpotify(externalLyric.tlyric);
+				duolyric = _LRC_LRC_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].combineSpotify(body.lyrics.lines, transLyric);
+				switch ($request?.headers?.["app-platform"] ?? $request?.headers?.["App-Platform"]) {
+					case "OSX": // macOS App 暂不支持翻译功能
+					case "Win32_x86_64": // Windows App 暂不支持翻译功能
+					case "WebPlayer": // Web App
+					case undefined:
+					// biome-ignore lint/suspicious/noFallthroughSwitchClause: <explanation>
+					default:
+						/*
+						if (duolyric) body.lyrics.lines = body.lyrics.lines.map((line, i) => {
+							if (line?.words) line.words = combineText(line.words, duolyric?.[i]?.twords ?? "♪");
+							return line;
+						});
+						*/
+						if (duolyric)
+							body.lyrics.lines = _LRC_LRC_mjs__WEBPACK_IMPORTED_MODULE_1__["default"].separateSpotify(duolyric).map(line => {
+								line.startTimeMs = line.startTimeMs.toString();
+								line.endTimeMs = line.endTimeMs.toString();
+								return line;
+							});
+					//break; 不中断，继续处理
+					case "iOS":
+						if (duolyric)
+							body.lyrics.alternatives.unshift({
+								language: "zh",
+								lines: duolyric.map(line => line?.twords ?? ""),
+							});
+						break;
+				}
+			}
+			break;
+		case "YouTube":
+			break;
+	}
+	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`body: ${JSON.stringify(body)}`);
+	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.log("✅ Injection Lyric");
+	return body;
+}
+
+async function searchTrack(vendor = "NeteaseMusic", keyword = "", UAPool = []) {
+	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.log("☑️ Search Track", `vendor: ${vendor}`, `keyword: ${keyword}`);
+	const Request = {
+		headers: {
+			Accept: "application/json",
+			"User-Agent": UAPool[Math.floor(Math.random() * UAPool.length)], // 随机UA
+		},
+	};
+	const trackInfo = {};
+	switch (vendor) {
+		case "NeteaseMusic": {
+			const searchUrl = new URL("https://music.163.com/api/cloudsearch/pc");
+			searchUrl.searchParams.set("type", 1);
+			searchUrl.searchParams.set("limit", 1);
+			searchUrl.searchParams.set("offset", 0);
+			searchUrl.searchParams.set("s", keyword);
+			_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`searchUrl: ${searchUrl.toJSON()}`);
+			Request.url = searchUrl.toString();
+			Request.headers.Referer = "https://music.163.com";
+			Request.headers.Cookie = "os=ios; __remember_me=true; NMTID=xxx";
+			const Result = await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(Request).then(response => JSON.parse(response.body));
+			trackInfo.id = Result?.result?.songs?.[0]?.id;
+			trackInfo.track = Result?.result?.songs?.[0]?.name;
+			trackInfo.album = Result?.result?.songs?.[0]?.ar?.name;
+			trackInfo.artist = Result?.result?.songs?.[0]?.al?.name;
 			break;
 		}
-		case "Row": // Row 逐行翻译
-			Translation = await Promise.all(text.map(async row => await retry(() => new _class_Translate_mjs__WEBPACK_IMPORTED_MODULE_9__["default"]({ Source: source, Target: target, API: API })[vendor](row), times, interval, exponential)));
+		case "NeteaseMusicNodeJS": {
+			const HostPool = [
+				"api.music.areschang.top",
+				//"mu-api.yuk0.com",
+				"netease.happyking.top",
+				"music.lovethewind.cn",
+				"neteasecloudmusicapi.nanocat.cloud",
+			];
+			// 搜索歌曲
+			const searchUrl = new URL(`https://${HostPool[Math.floor(Math.random() * HostPool.length)]}/cloudsearch`);
+			searchUrl.searchParams.set("type", 1);
+			searchUrl.searchParams.set("limit", 1);
+			searchUrl.searchParams.set("offset", 0);
+			searchUrl.searchParams.set("keywords", keyword);
+			_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`searchUrl: ${searchUrl.toJSON()}`);
+			Request.url = searchUrl.toString();
+			Request.headers.Referer = "https://music.163.com";
+			const Result = await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(Request).then(response => JSON.parse(response.body));
+			trackInfo.id = Result?.result?.songs?.[0]?.id;
+			trackInfo.track = Result?.result?.songs?.[0]?.name;
+			trackInfo.album = Result?.result?.songs?.[0]?.ar?.name;
+			trackInfo.artist = Result?.result?.songs?.[0]?.al?.name;
 			break;
+		}
+		case "QQMusic":
+		default: {
+			const searchUrl = new URL("https://c.y.qq.com/cgi-bin/musicu.fcg");
+			_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`searchUrl: ${searchUrl.toJSON()}`);
+			Request.url = searchUrl.toString();
+			Request.headers.Referer = "https://c.y.qq.com";
+			Request.body = JSON.stringify({
+				"music.search.SearchCgiService": {
+					method: "DoSearchForQQMusicDesktop",
+					module: "music.search.SearchCgiService",
+					param: {
+						num_per_page: 1,
+						page_num: 1,
+						query: keyword,
+						search_type: 0,
+					},
+				},
+			});
+			const Result = await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(Request).then(response => JSON.parse(response.body));
+			trackInfo.mid = Result?.["music.search.SearchCgiService"]?.data?.body?.song?.list?.[0]?.mid;
+			trackInfo.track = Result?.["music.search.SearchCgiService"]?.data?.body?.song?.list?.[0]?.name;
+			trackInfo.album = Result?.["music.search.SearchCgiService"]?.data?.body?.song?.list?.[0]?.album?.name;
+			trackInfo.artist = Result?.["music.search.SearchCgiService"]?.data?.body?.song?.list?.[0]?.singer?.[0]?.name;
+			break;
+		}
+		case "QQMusicOld": {
+			const searchUrl = new URL("https://c.y.qq.com/soso/fcgi-bin/search_for_qq_cp");
+			searchUrl.searchParams.set("format", "json");
+			searchUrl.searchParams.set("p", 1);
+			searchUrl.searchParams.set("n", 1);
+			searchUrl.searchParams.set("w", keyword);
+			searchUrl.searchParams.set("remoteplace", "txt.yqq.song");
+			_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`searchUrl: ${searchUrl.toJSON()}`);
+			Request.url = searchUrl.toString();
+			/*
+			const searchUrl = {
+				"scheme": "https",
+				"host": "c.y.qq.com",
+				"path": "soso/fcgi-bin/search_for_qq_cp",
+				//"path": "soso/fcgi-bin/client_search_cp",
+				"query": {
+					"format": "json",
+					//"outCharset": 'utf-8',
+					//"ct": 24,
+					//"qqmusic_ver": 1298,
+					"p": 1,
+					"n": 1,
+					"w": encodeURIComponent(keyword),
+					//"key": encodeURIComponent(keyword),
+					"remoteplace": 'txt.yqq.song',
+					//"t": 0,
+					//"aggr": 1,
+					//"cr": 1,
+					//"lossless": 0,
+					//"flag_qc": 0,
+					//"platform": 'yqq.json',
+				}
+			};
+			Console.debug(`searchUrl: ${JSON.stringify(searchUrl)}`);
+			Request.url = URI.stringify(searchUrl);
+			*/
+			Request.headers.Referer = "https://c.y.qq.com";
+			const Result = await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(Request).then(response => JSON.parse(response.body));
+			trackInfo.mid = Result?.data?.song?.list?.[0]?.songmid;
+			trackInfo.track = Result?.data?.song?.list?.[0]?.songname;
+			trackInfo.album = Result?.data?.song?.list?.[0]?.albumname;
+			trackInfo.artist = Result?.data?.song?.list?.[0]?.singer?.[0]?.name;
+			break;
+		}
 	}
-	//Console.debug(`Translation: ${JSON.stringify(Translation)}`);
-	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.log("✅ Translator");
-	return Translation;
+	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.log("✅ Search Track", `trackInfo: ${JSON.stringify(trackInfo)}`);
+	return trackInfo;
+}
+
+async function searchLyric(vendor = "NeteaseMusic", trackId = undefined, UAPool = []) {
+	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.log("☑️ Search Lyric", `vendor: ${vendor}`, `trackId: ${trackId}`);
+	const Request = {
+		headers: {
+			Accept: "application/json",
+			"User-Agent": UAPool[Math.floor(Math.random() * UAPool.length)], // 随机UA
+		},
+	};
+	const Lyrics = {};
+	switch (vendor) {
+		case "NeteaseMusic": {
+			const lyricUrl = new URL("https://music.163.com/api/song/lyric");
+			lyricUrl.searchParams.set("id", trackId); // trackInfo.NeteaseMusic.id
+			lyricUrl.searchParams.set("lv", -1);
+			lyricUrl.searchParams.set("yv", -1);
+			lyricUrl.searchParams.set("tv", -1);
+			_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`lyricUrl: ${lyricUrl.toJSON()}`);
+			Request.url = lyricUrl.toString();
+			Request.headers.Referer = "https://music.163.com";
+			Request.headers.Cookie = "os=ios; __remember_me=true; NMTID=xxx";
+			const Result = await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(Request).then(response => JSON.parse(response.body));
+			_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`Result: ${JSON.stringify(Result)}`);
+			Lyrics.lyric = Result?.lrc?.lyric;
+			Lyrics.tlyric = Result?.ytlrc?.lyric ?? Result?.tlyric?.lyric;
+			Lyrics.klyric = Result?.yrc?.lyric ?? Result?.klyric?.lyric;
+			Lyrics.lyricUser = Result?.lyricUser?.nickname;
+			Lyrics.transUser = Result?.transUser?.nickname;
+			break;
+		}
+		case "NeteaseMusicNodeJS": {
+			const HostPool = [
+				"api.music.areschang.top",
+				//"mu-api.yuk0.com",
+				"netease.happyking.top",
+				"music.lovethewind.cn",
+				"neteasecloudmusicapi.nanocat.cloud",
+			];
+			const lyricUrl = new URL(`https://${HostPool[Math.floor(Math.random() * HostPool.length)]}/lyric/new`);
+			lyricUrl.searchParams.set("id", trackId); // trackInfo.NeteaseMusic.id
+			_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`lyricUrl: ${lyricUrl.toJSON()}`);
+			Request.url = lyricUrl.toString();
+			Request.headers.Referer = "https://music.163.com";
+			const Result = await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(Request).then(response => JSON.parse(response.body));
+			_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`Result: ${JSON.stringify(Result)}`);
+			Lyrics.lyric = Result?.lrc?.lyric;
+			Lyrics.tlyric = Result?.ytlrc?.lyric ?? Result?.tlyric?.lyric;
+			Lyrics.klyric = Result?.yrc?.lyric ?? Result?.klyric?.lyric;
+			Lyrics.lyricUser = Result?.lyricUser?.nickname;
+			Lyrics.transUser = Result?.transUser?.nickname;
+			break;
+		}
+		case "QQMusic":
+		default: {
+			const lyricUrl = new URL("https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg");
+			lyricUrl.searchParams.set("g_tk", 5381);
+			lyricUrl.searchParams.set("format", "json");
+			lyricUrl.searchParams.set("nobase64", 1);
+			lyricUrl.searchParams.set("songmid", trackId); // trackInfo.QQMusic.mid
+			_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`lyricUrl: ${lyricUrl.toJSON()}`);
+			Request.url = lyricUrl.toString();
+			Request.headers.Referer = "https://lyric.music.qq.com";
+			const Result = await (0,_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.fetch)(Request).then(response => JSON.parse(response.body));
+			Lyrics.lyric = Result?.lyric;
+			Lyrics.tlyric = Result?.trans;
+			Lyrics.klyric = undefined;
+			Lyrics.lyricUser = undefined;
+			Lyrics.transUser = undefined;
+			break;
+		}
+	}
+	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.debug(`Lyrics: ${JSON.stringify(Lyrics)}`);
+	_nsnanocat_util__WEBPACK_IMPORTED_MODULE_0__.Console.log("✅ Search Lyric");
+	return Lyrics;
 }
 
 /**
@@ -8881,6 +6411,24 @@ async function retry(fn, retriesLeft = 5, interval = 1000, exponential = false) 
 		} else throw new Error("❌ retry, 最大重试次数");
 	}
 }
+
+String.prototype.decodeHTML = function () {
+	return this.replace(/&apos;/g, "'")
+		.replace(/&quot;/g, '"')
+		.replace(/&gt;/g, ">")
+		.replace(/&lt;/g, "<")
+		.replace(/&amp;/g, "&")
+		.replace(/&nbsp;/g, " ")
+		.replace(/&#39;/g, "'")
+		.replace(/&ldquo;/g, "“")
+		.replace(/&rdquo;/g, "”")
+		.replace(/&#x2f;/g, "/")
+		.replace(/&mdash;/g, "—")
+		.replace(/&hellip;/g, "…")
+		.replace(/&bull;/g, "•")
+		.replace(/&copy;/g, "©")
+		.replace(/%23x2f;/g, "/");
+};
 
 })();
 
