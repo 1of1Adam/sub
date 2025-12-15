@@ -3572,7 +3572,7 @@ console.log("Date: 2025/11/23 15:45:04");
           OpenAI: {
             model_display_name: "Gemini 3 Pro",
             model: "gemini-3-pro-preview",
-            base_url: "http://localhost:8317/v1",
+            base_url: "http://192.168.31.203:8317/v1",
             api_key: "dummy-not-used",
             provider: "openai"
           },
