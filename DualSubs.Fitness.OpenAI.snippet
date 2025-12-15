@@ -1,5 +1,5 @@
 #!name = 🍿️ DualSubs: Fitness (Gemini-3-Pro)
-#!desc = Apple Fitness+ 字幕翻译模块\n使用 OpenAI 兼容 API\n端点: 192.168.31.203:8317 | 模型: gemini-3-pro-preview
+#!desc = Apple Fitness+ 字幕翻译模块 - OpenAI API (gemini-3-pro-preview)
 #!author = VirgilClyne, Modified for OpenAI
 #!homepage = https://DualSubs.github.io/guide/universal
 #!icon = https://github.com/DualSubs/Universal/raw/main/src/assets/icon_rounded.png
@@ -8,19 +8,17 @@
 #!version = 1.0.0-fitness
 
 [rewrite_local]
-# ==================== Apple Fitness+ ====================
-# 🍿️ DualSubs.Fitness.M3U8.Master.response
+# Apple Fitness+ M3U8 Master
 ^https?:\/\/(play|play-edge|hls)\.itunes\.apple\.com\/WebObjects\/(MZPlay|MZPlayLocal)\.woa\/hls\/workout\/playlist\.m3u8 url script-response-body https://raw.githubusercontent.com/1of1Adam/sub/main/scripts/Manifest.response.bundle.js
 
-# 🍿️ DualSubs.Fitness.M3U8.Subtitles.response
+# Apple Fitness+ M3U8 Subtitles
 ^https?:\/\/(hls|hls-svod)\.itunes\.apple\.com\/itunes-assets\/(.+)\/([0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12})\/(.+)_subtitles_V\d\.m3u8 url script-response-body https://raw.githubusercontent.com/1of1Adam/sub/main/scripts/Manifest.response.bundle.js
 
-# 🍿️ DualSubs.Fitness.Composite.Subtitles.response
+# Apple Fitness+ Composite Subtitles
 ^https?:\/\/(hls|hls-svod)\.itunes\.apple\.com\/itunes-assets\/(.+)\/([0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12})\/(.+)\.webvtt\?(.*)subtype=(Official|External) url script-response-body https://raw.githubusercontent.com/1of1Adam/sub/main/scripts/Composite.Subtitles.response.bundle.js
 
-# 🍿️ DualSubs.Fitness.Translate.Subtitles.response - 使用 OpenAI 翻译脚本
+# Apple Fitness+ Translate Subtitles (OpenAI)
 ^https?:\/\/(hls|hls-svod)\.itunes\.apple\.com\/itunes-assets\/(.+)\/([0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12})\/(.+)\.webvtt\?(.*)subtype=Translate url script-response-body https://raw.githubusercontent.com/1of1Adam/sub/main/scripts/Translate.OpenAI.response.js
 
 [mitm]
 hostname = hls.itunes.apple.com, hls-svod.itunes.apple.com
-
