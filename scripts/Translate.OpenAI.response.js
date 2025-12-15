@@ -196,8 +196,9 @@ ${sourceLang ? `6. The source language is ${sourceLang}` : ""}`;
                 return textArray.map((original, i) => translatedLines[i] || original);
             }
         } catch (error) {
-            Console.error(`翻译请求失败: ${error}`);
-            return textArray.map(() => `翻译失败: ${error.message || error}`);
+            const errMsg = error?.message || (typeof error === "object" ? JSON.stringify(error) : String(error));
+            Console.error(`翻译请求失败: ${errMsg}`);
+            return textArray.map(() => `翻译失败: ${errMsg}`);
         }
     }
 }
@@ -314,11 +315,16 @@ const VTT = {
         Console.info(`URL: ${url.substring(0, 100)}...`);
         Console.info(`Content-Type: ${contentType}`);
 
-        // 解析 URL 参数
-        const urlObj = new URL(url);
-        const subtype = urlObj.searchParams?.get("subtype");
-        const lang = urlObj.searchParams?.get("lang")?.toUpperCase() || config.Languages[0];
-        const tlang = urlObj.searchParams?.get("tlang")?.toUpperCase() || config.Languages[1];
+        // 简单解析 URL 参数 (兼容 Quantumult X)
+        function getUrlParam(url, param) {
+            const regex = new RegExp(`[?&]${param}=([^&]*)`);
+            const match = url.match(regex);
+            return match ? decodeURIComponent(match[1]) : null;
+        }
+        
+        const subtype = getUrlParam(url, "subtype");
+        const lang = (getUrlParam(url, "lang") || config.Languages[0]).toUpperCase();
+        const tlang = (getUrlParam(url, "tlang") || config.Languages[1]).toUpperCase();
 
         Console.info(`源语言: ${lang}, 目标语言: ${tlang}`);
 
@@ -395,8 +401,9 @@ const VTT = {
         }
 
     } catch (error) {
-        Console.error(`处理失败: ${error}`);
-        Console.error(error.stack);
+        const errMsg = error?.message || (typeof error === "object" ? JSON.stringify(error) : String(error));
+        Console.error(`处理失败: ${errMsg}`);
+        if (error?.stack) Console.error(error.stack);
         done({ body: $response?.body || "" });
     }
 })();
