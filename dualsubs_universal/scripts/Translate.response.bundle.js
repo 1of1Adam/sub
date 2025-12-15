@@ -4046,6 +4046,7 @@ console.log("Date: 2025/11/23 15:45:04");
         let o = `${s}/chat/completions`;
         let u = {
           url: o,
+          timeout: n?.timeout ?? n?.Timeout ?? 30,
           headers: {
             "User-Agent": "DualSubs",
             "Content-Type": "application/json; charset=utf-8"
