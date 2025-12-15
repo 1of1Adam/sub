@@ -7,18 +7,15 @@
 #!date = 2025-12-15
 #!version = 1.0.0-fitness
 
-[rewrite_local]
-# Apple Fitness+ M3U8 Master
+#[rewrite_local]
+# 🍿️ DualSubs.Fitness.M3U8.Master.response
 ^https?:\/\/(play|play-edge|hls)\.itunes\.apple\.com\/WebObjects\/(MZPlay|MZPlayLocal)\.woa\/hls\/workout\/playlist\.m3u8 url script-response-body https://raw.githubusercontent.com/1of1Adam/sub/main/scripts/Manifest.response.bundle.js
-
-# Apple Fitness+ M3U8 Subtitles
+# 🍿️ DualSubs.Fitness.M3U8.Subtitles.response
 ^https?:\/\/(hls|hls-svod)\.itunes\.apple\.com\/itunes-assets\/(.+)\/([0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12})\/(.+)_subtitles_V\d\.m3u8 url script-response-body https://raw.githubusercontent.com/1of1Adam/sub/main/scripts/Manifest.response.bundle.js
-
-# Apple Fitness+ Composite Subtitles
+# 🍿️ DualSubs.Fitness.Composite.Subtitles.response
 ^https?:\/\/(hls|hls-svod)\.itunes\.apple\.com\/itunes-assets\/(.+)\/([0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12})\/(.+)\.webvtt\?(.*)subtype=(Official|External) url script-response-body https://raw.githubusercontent.com/1of1Adam/sub/main/scripts/Composite.Subtitles.response.bundle.js
-
-# Apple Fitness+ Translate Subtitles (OpenAI)
+# 🍿️ DualSubs.Fitness.Translate.Subtitles.response
 ^https?:\/\/(hls|hls-svod)\.itunes\.apple\.com\/itunes-assets\/(.+)\/([0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12})\/(.+)\.webvtt\?(.*)subtype=Translate url script-response-body https://raw.githubusercontent.com/1of1Adam/sub/main/scripts/Translate.OpenAI.response.js
 
-[mitm]
+#[mitm]
 hostname = hls.itunes.apple.com, hls-svod.itunes.apple.com
