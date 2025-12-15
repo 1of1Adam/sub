@@ -2,7 +2,7 @@
 console.log('🍿️ DualSubs: 🔣 Universal β');
 console.log('External.Lyrics.response.bundle.js');
 console.log('Version: undefined');
-console.log('Date: 2025/12/15 23:46:06');
+console.log('Date: 2025/12/16 00:11:13');
 (() => { // webpackBootstrap
 "use strict";
 var __webpack_modules__ = ({
@@ -5312,6 +5312,11 @@ __webpack_require__.d(__webpack_exports__, {
 	},
 	API: {
 		Settings: {
+			OpenAI: {
+				BaseURL: "http://192.168.31.203:8317/v1",
+				Model: "gemini-3-pro-preview",
+				Auth: "dummy-not-used",
+			},
 			GoogleCloud: {
 				Version: "v2",
 				Mode: "Key",
